@@ -1,0 +1,79 @@
+.sb-example-1 .search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.sb-example-1 .searchTerm {
+  width: 100%;
+  border: 3px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+.sb-example-1 .searchTerm:focus {
+  color: #00b4cc;
+}
+.sb-example-1 .searchButton {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+/* USER CARD STYLES */
+.usercard--container {
+  /* margin-bottom: 20px; */
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.usercard-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.usercard-info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+/* APP BUTTON */
+.app-btn {
+  background-color: #00b4cc;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: none;
+}
+/*  */
+.app-bar {
+  background-color: #fff !important;
+  color: black !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.flex-x {
+  display: flex;
+  align-items: center;
+}
+.transform {
+  transform: translateY(70px);
+  transition: all 3s ease-in;
+}
+.align-left {
+  justify-content: flex-end;
+}
+.fullwidth {
+  width: 100%;
+  z-index: 1000;
+}

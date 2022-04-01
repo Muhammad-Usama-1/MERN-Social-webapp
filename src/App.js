@@ -1,24 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useMediaQuery } from "@mui/material";
+import React, { useState } from "react";
+import AppBar from "./componenets/AppBar";
+import FreindsSidebar from "./componenets/FreindsSidebar";
+import Fuck from "./componenets/Fuck";
+import Sidebar from "./componenets/Sidebar";
+import VerticalContent from "./componenets/VerticalContent";
+// import MenuBook from "@mui/icons-material/MenuBook";
+// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+// import Post from "./componenets/Post";
+// import Story from "./componenets/Story";
+import "./styles/FeedStyle.css";
+import "./styles/golbalStyles.css";
 function App() {
+  let visible = true;
+  // const [visible, setVisible] = useState(true);
+  // const [visibleFr, setVisibleFr] = useState(true);
+  const matchesbig = useMediaQuery("(min-width:1500px)");
+  // const matches1300 = useMediaQuery("(min-width:1300px)");
+  const matches = useMediaQuery("(min-width:980px)");
+  const matchesmobile = useMediaQuery("(min-width:680px)");
+
+  const sidebar = React.useRef(null);
+  const fsidebar = React.useRef(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppBar sidebar={sidebar} />
+      <main
+        className={`container ${!matchesbig ? "container-tab" : null} ${
+          !matchesmobile ? "container-mobile" : null
+        }`}
+      >
+        <div></div>
+        <div className="sidebar-fixed">
+          {visible && (
+            <div>
+              <Sidebar sidebar={sidebar} />
+            </div>
+          )}
+        </div>
+        <div className={`content ${!matches ? "content-pad" : null} `}>
+          <Fuck />
+          {matches && <VerticalContent />}
+        </div>
+        <div></div>
+        <div className="friendsSidebar">
+          {visible && <FreindsSidebar fsidebar={fsidebar} />}
+        </div>
+      </main>
+    </>
   );
 }
 

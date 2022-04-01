@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  display: grid !important;
+  margin-top: 62px;
+  grid-template-columns: 280px 1fr 250px;
+}
+.container-tab {
+  grid-template-columns: 100px 1fr 100px;
+}
+
+.container-mobile {
+  grid-template-columns: 1fr;
+}
+.sidebar-fixed {
+  position: fixed;
+}
+.friendsSidebar {
+  position: fixed;
+  right: 10px;
+}
+.content {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+}
+.content-pad {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+}
+.vertical-flex {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: pink; */
+}
+
+.friends-sidebar {
+  background-color: #fff;
+  padding: 10px;
+}
+.friends-status {
+  display: flex;
+  align-items: center;
+}
+.friends-status > img {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+}
+.story-card,
+.event-card,
+.birthday-card {
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
+}
+.h {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.h p {
+  font-size: 2rem;
+}
+.h img {
+  width: 50px;
+}
+.post {
+  background-color: #00b4cc;
+}
