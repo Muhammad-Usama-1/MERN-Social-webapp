@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import AppBar from "./componenets/AppBar";
 import FreindsSidebar from "./componenets/FreindsSidebar";
 import Fuck from "./componenets/Fuck";
+import Post from "./componenets/Post";
 import Sidebar from "./componenets/Sidebar";
 import VerticalContent from "./componenets/VerticalContent";
 // import MenuBook from "@mui/icons-material/MenuBook";
@@ -40,7 +41,10 @@ function App() {
           )}
         </div>
         <div className={`content ${!matches ? "content-pad" : null} `}>
-          <Fuck />
+          <div className="posts">
+            <Post />
+          </div>
+          {/* <Fuck /> */}
           {matches && <VerticalContent />}
         </div>
         <div></div>
