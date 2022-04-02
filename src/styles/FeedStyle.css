@@ -10,7 +10,6 @@
   grid-template-columns: 100px 1fr 100px;
 }
 .container-990 {
-  /* background-color: yellow; */
   grid-template-columns: 1fr;
 }
 
@@ -25,6 +24,7 @@
 }
 .content {
   margin: 10px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 300px;
 }
@@ -82,7 +82,8 @@
   box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #ffffff;
+
   display: flex;
   flex-direction: column;
 }
@@ -109,4 +110,23 @@
   color: #00b4cc;
 
   margin-left: 5px;
+}
+.post-comment {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.post-comment__input {
+  outline: none;
+  width: max-content;
+  /* height: 30px; */
+  border: 0px;
+}
+.post-comment__icons-box > svg {
+  margin-left: 10px;
+}
+.post-comment:focus-within {
+  border: 1px solid #00b4cc;
 }

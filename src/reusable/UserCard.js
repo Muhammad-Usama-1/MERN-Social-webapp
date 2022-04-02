@@ -7,7 +7,13 @@ function UserCard({ title = " Anna Sthesia", subTitle = "Just Now", cta }) {
       <div className="usercard-info">
         <div style={{ display: "flex" }}>
           <p>
-            <span style={{ fontWeight: "500", marginRight: "5px" }}>
+            <span
+              style={{
+                fontWeight: "400",
+                fontFamily: "Poppins ,sans-serif",
+                marginRight: "5px",
+              }}
+            >
               {title}
             </span>
             {cta && cta}

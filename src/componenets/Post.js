@@ -2,9 +2,12 @@ import React from "react";
 import UserCard from "../reusable/UserCard";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import ThumbUpAltOutlinedIcon from "@mui/icons-material/ThumbUpAltOutlined";
-import { Avatar, Divider, Menu, MenuItem } from "@mui/material";
+import { Avatar, Divider, Menu, MenuItem, TextField } from "@mui/material";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import LinkIcon from "@mui/icons-material/Link";
+import TagFacesIcon from "@mui/icons-material/TagFaces";
 import EmededVideo from "./EmededVideo";
+import CameraAltIcon from "@mui/icons-material/CameraAlt";
 // import FbImageLibrary from "react-fb-image-grid";
 
 // import QuiltedImageList from "./ImageList";
@@ -151,6 +154,19 @@ function Post({ videoUrl, images }) {
         </div>
       </div>
       <Divider />
+
+      <div className="post-comment">
+        <input
+          placeholder="Enter your comment..."
+          type="text"
+          className="post-comment__input"
+        />
+        <div className="post-comment__icons-box" style={{ marginLeft: "auto" }}>
+          <LinkIcon />
+          <TagFacesIcon />
+          <CameraAltIcon />
+        </div>
+      </div>
     </div>
   );
 }
