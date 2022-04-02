@@ -15,15 +15,17 @@ import UserCard from "../reusable/UserCard";
 
 export default function ButtonAppBar({ sidebar }) {
   const [open, setOpen] = React.useState(false);
-  const matches = useMediaQuery("(min-width:980px)");
+  const matches1300 = useMediaQuery("(min-width:1300px)");
+  const matches990 = useMediaQuery("(min-width:990px)");
   const matchesmobile = useMediaQuery("(min-width:680px)");
   const toggle = React.useRef(null);
   const runFunc = () => {
-    if (!matches) {
+    if (!matches1300) {
       sidebar.current.classList.toggle("show");
       sidebar.current.classList.toggle("close");
       return;
     }
+    console.log("Clicked..");
     sidebar.current.classList.toggle("close");
   };
 
@@ -47,7 +49,7 @@ export default function ButtonAppBar({ sidebar }) {
           </header>
           {matchesmobile && <SearchAppBar />}
 
-          {matches ? (
+          {matches990 ? (
             <div className="flex-x">
               <LocalPostOfficeOutlinedIcon
                 style={{ marginLeft: 10, color: "#00b4cc" }}
@@ -69,7 +71,7 @@ export default function ButtonAppBar({ sidebar }) {
           )}
         </Toolbar>
       </AppBar>
-      {open && !matches && (
+      {open && !matches990 && (
         <div
           style={{ backgroundColor: "#fff" }}
           className="flex-x transform fullwidth align-left"

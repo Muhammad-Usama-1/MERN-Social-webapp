@@ -6,11 +6,13 @@ import UserCard from "../reusable/UserCard";
 import "../styles/FriendsSidebar.css";
 
 function FreindsSidebar({ fsidebar }) {
-  const matches = useMediaQuery("(min-width:980px)");
+  // const matches = useMediaQuery("(min-width:980px)");
+  const matches990 = useMediaQuery("(min-width:990px)");
+
   const matches1300 = useMediaQuery("(min-width:1300px)");
-  const matchesbig = useMediaQuery("(min-width:1500px)");
+  const matches1500 = useMediaQuery("(min-width:1500px)");
   const runFunc = () => {
-    if (!matches) {
+    if (!matches1300) {
       fsidebar.current.classList.toggle("show");
       fsidebar.current.classList.toggle("close");
       return;
@@ -20,14 +22,14 @@ function FreindsSidebar({ fsidebar }) {
 
   return (
     <div style={{ display: "flex" }}>
-      <div className="fsidebar-mobile">
-        <ArrowForwardIcon onClick={runFunc} fontSize="large" />
+      <div onClick={runFunc} className="fsidebar-mobile">
+        <ArrowForwardIcon fontSize="large" />
       </div>
 
       <div className="">
         <nav
           ref={fsidebar}
-          className={`fsidebar ${!matchesbig && "close"} ${
+          className={`fsidebar ${!matches1500 && "close"} ${
             !matches1300 && "hide"
           }
     `}

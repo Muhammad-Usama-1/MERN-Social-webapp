@@ -16,10 +16,10 @@ function App() {
   let visible = true;
   // const [visible, setVisible] = useState(true);
   // const [visibleFr, setVisibleFr] = useState(true);
-  const matchesbig = useMediaQuery("(min-width:1500px)");
-  // const matches1300 = useMediaQuery("(min-width:1300px)");
-  const matches = useMediaQuery("(min-width:980px)");
-  const matchesmobile = useMediaQuery("(min-width:680px)");
+  const matches1500 = useMediaQuery("(min-width:1500px)");
+  const matches1300 = useMediaQuery("(min-width:1300px)");
+  const matches990 = useMediaQuery("(min-width:990px)");
+  const matches680 = useMediaQuery("(min-width:680px)");
 
   const sidebar = React.useRef(null);
   const fsidebar = React.useRef(null);
@@ -28,8 +28,8 @@ function App() {
     <>
       <AppBar sidebar={sidebar} />
       <main
-        className={`appcontainer ${!matchesbig ? "container-tab" : null} ${
-          !matchesmobile ? "container-mobile" : null
+        className={`container ${!matches1500 ? "container-1500" : null} ${
+          !matches990 ? "container-990" : null
         }`}
       >
         <div></div>
@@ -40,12 +40,17 @@ function App() {
             </div>
           )}
         </div>
-        <div className={`content ${!matches ? "content-pad" : null} `}>
+        <div className={`content ${!matches990 ? "content-990" : null} `}>
           <div className="posts">
-            <Post />
+            <Post videoUrl={"https://www.youtube.com/embed/DN0AdgIq0FA"} />
+            <Post
+              images={[
+                "https://images.unsplash.com/photo-1648809646466-dd4891a0bc15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+              ]}
+            />
           </div>
           {/* <Fuck /> */}
-          {matches && <VerticalContent />}
+          {matches990 && <VerticalContent />}
         </div>
         <div></div>
         <div className="friendsSidebar">

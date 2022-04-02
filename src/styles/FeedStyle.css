@@ -1,16 +1,20 @@
-.appcontainer {
+.container {
   position: relative;
   display: grid !important;
   margin-top: 62px;
   grid-template-columns: 280px 1fr 280px;
   background-color: #f8f9fa;
+  overflow: hidden;
 }
-.container-tab {
+.container-1500 {
   grid-template-columns: 100px 1fr 100px;
+}
+.container-990 {
+  /* background-color: yellow; */
+  grid-template-columns: 1fr;
 }
 
 .container-mobile {
-  grid-template-columns: 1fr;
 }
 .sidebar-fixed {
   position: fixed;
@@ -20,16 +24,15 @@
   right: 10px;
 }
 .content {
-  /* background-color: palevioletred; */
-  /* padding: 10px; */
   margin: 10px;
   display: grid;
   grid-template-columns: 1fr 300px;
 }
-.content-pad {
+.content-990 {
+  padding: 20px;
   margin: 20px;
   display: grid;
-  grid-template-columns: 1fr 0px;
+  grid-template-columns: 1fr;
   /* margin: 0 ; */
 }
 .vertical-flex {
@@ -84,18 +87,21 @@
   flex-direction: column;
 }
 .post--img {
-  width: 300px;
+  /* z-index: -10; */
+  /* width: 500px; */
+
   /* height: 300px; */
 }
 /* .post-media {
   height: 200px !important;
 } */
+.post-media {
+  background-color: gray;
+}
 .post-media > img {
-  margin: 2px;
-  /* flex: 1; */
+  width: 100%;
 }
 .post-reaction {
-  /* background-color: aqua; */
   padding: 5px;
   margin-bottom: 20px;
 }
