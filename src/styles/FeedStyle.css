@@ -106,6 +106,10 @@
   padding: 5px;
   margin-bottom: 20px;
 }
+.post-comments > span {
+  margin-left: 2px;
+  color: #00b4cc;
+}
 .post-reaction > span {
   color: #00b4cc;
 
@@ -129,4 +133,7 @@
 }
 .post-comment:focus-within {
   border: 1px solid #00b4cc;
+}
+.posted-comments {
+  margin-top: 20px;
 }

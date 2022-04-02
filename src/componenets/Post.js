@@ -14,7 +14,8 @@ import CameraAltIcon from "@mui/icons-material/CameraAlt";
 // import { Logout, PersonAdd, Settings } from "@mui/icons-material";
 // import Photogrid from "react-facebook-photo-grid";
 
-function Post({ videoUrl, images }) {
+function Post({ videoUrl, images, user, comments, like }) {
+  console.log(user);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -32,7 +33,12 @@ function Post({ videoUrl, images }) {
           justifyContent: "space-between",
         }}
       >
-        <UserCard cta={"Added new photo"} />
+        <UserCard
+          title={user?.title}
+          cta={user?.cta}
+          image={user?.photo}
+          // cta={"Added new photo"}
+        />
         <MoreHorizIcon
           onClick={handleClick}
           size="small"
@@ -132,13 +138,10 @@ function Post({ videoUrl, images }) {
       </div>
 
       <div className="post-media">
-        {videoUrl && (
-          <EmededVideo videoUrl={"https://www.youtube.com/embed/qYi-OLf5q5g"} />
-        )}
+        {videoUrl && <EmededVideo videoUrl={videoUrl} />}
         {!videoUrl && images && (
           <img className="post--img" src={images[0]} alt="" />
         )}
-        {/* <FbImageLibrary countFrom={4} images={images} /> */}
       </div>
 
       <div
@@ -146,7 +149,7 @@ function Post({ videoUrl, images }) {
         style={{ display: "flex", alignItems: "center" }}
       >
         <ThumbUpAltOutlinedIcon style={{ color: "#00b4cc", margin: 5 }} />
-        <span>140 Likes </span>
+        <span> {like} Likes </span>
         <span>20 Comments</span>
         <div
           style={{ marginLeft: "auto", display: "flex", alignItems: "center" }}
@@ -168,6 +171,19 @@ function Post({ videoUrl, images }) {
           <TagFacesIcon />
           <CameraAltIcon />
         </div>
+      </div>
+      <div className="posted-comments">
+        {comments?.map((com, i) => (
+          <UserCard
+            key={i}
+            title={com?.user?.name}
+            createdAt="5 min"
+            subTitle={com?.comment}
+            image={com?.user?.photo}
+          />
+        ))}
+        {/* <UserCard toComment={true} /> */}
+        {/* <UserCard toComment={true} /> */}
       </div>
     </div>
   );

@@ -12,7 +12,9 @@ import VerticalContent from "./componenets/VerticalContent";
 // import Story from "./componenets/Story";
 import "./styles/FeedStyle.css";
 import "./styles/golbalStyles.css";
+import data from "./assets/posts.json";
 function App() {
+  // console.log(data);
   let visible = true;
   // const [visible, setVisible] = useState(true);
   // const [visibleFr, setVisibleFr] = useState(true);
@@ -46,12 +48,15 @@ function App() {
         `}
         >
           <div className="posts">
-            <Post videoUrl={"https://www.youtube.com/embed/DN0AdgIq0FA"} />
-            <Post
-              images={[
-                "https://images.unsplash.com/photo-1648809646466-dd4891a0bc15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-              ]}
-            />
+            {data.map((post) => (
+              <Post
+                videoUrl={post.videoUrl}
+                comments={post.comments}
+                images={post.images}
+                user={post.user}
+                like={post.like}
+              />
+            ))}
           </div>
           {/* <Fuck /> */}
           {matches990 && <VerticalContent />}
