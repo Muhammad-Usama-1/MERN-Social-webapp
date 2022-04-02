@@ -6,7 +6,7 @@ function UserCard({ title = " Anna Sthesia", subTitle = "Just Now", cta }) {
       <img className="usercard-photo" src={userPhoto} alt="" />
       <div className="usercard-info">
         <div style={{ display: "flex" }}>
-          <p style={{ fontWeight: "500", marginRight: "5px" }}>
+          <p>
             <span style={{ fontWeight: "500", marginRight: "5px" }}>
               {title}
             </span>

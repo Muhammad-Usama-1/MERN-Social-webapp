@@ -10,6 +10,7 @@
 }
 .sidebar.close {
   width: 88px;
+  opacity: 1 !important;
 }
 
 /* ===== Reusable code - Here ===== */

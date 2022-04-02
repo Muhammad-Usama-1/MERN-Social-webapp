@@ -28,7 +28,7 @@ function App() {
     <>
       <AppBar sidebar={sidebar} />
       <main
-        className={`container ${!matchesbig ? "container-tab" : null} ${
+        className={`appcontainer ${!matchesbig ? "container-tab" : null} ${
           !matchesmobile ? "container-mobile" : null
         }`}
       >

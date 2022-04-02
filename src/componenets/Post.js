@@ -1,10 +1,23 @@
 import React from "react";
 import UserCard from "../reusable/UserCard";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import ThumbUpAltOutlinedIcon from "@mui/icons-material/ThumbUpAltOutlined";
 import { Avatar, Divider, Menu, MenuItem } from "@mui/material";
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import FbImageLibrary from "react-fb-image-grid";
+
+// import QuiltedImageList from "./ImageList";
 // import { Logout, PersonAdd, Settings } from "@mui/icons-material";
+// import Photogrid from "react-facebook-photo-grid";
 
 function Post() {
+  const images = [
+    "https://images.unsplash.com/photo-1648737154448-ccf0cafae1c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1603065226404-aa3c955eb5aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1648737155328-0c0012cf2f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1648716522710-6beec6cbb293?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1648809646466-dd4891a0bc15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+  ];
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -29,6 +42,7 @@ function Post() {
           sx={{ ml: 2 }}
           aria-controls={open ? "account-menu" : undefined}
           aria-haspopup="true"
+          fontSize="large"
           // aria-expanded={open ? "true" : undefined}
         ></MoreHorizIcon>
         <Menu
@@ -119,13 +133,33 @@ function Post() {
           quidem vero.
         </p>
       </div>
-      <div>
-        <img
-          className="post--img"
-          src="https://images.unsplash.com/photo-1648737119359-510d4f551382?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+
+      <div className="post-media">
+        {/* <img
+          src="https://images.unsplash.com/photo-1648809646466-dd4891a0bc15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
           alt=""
-        />
+        /> */}
+        <FbImageLibrary countFrom={4} images={images} />
       </div>
+
+      <div
+        className="post-reaction"
+        style={{ display: "flex", alignItems: "center" }}
+      >
+        <ThumbUpAltOutlinedIcon
+          style={{ color: "#00b4cc", margin: 5 }}
+          fontSize="large"
+        />
+        <span>140 Likes </span>
+        <span>20 Comments</span>
+        <div
+          style={{ marginLeft: "auto", display: "flex", alignItems: "center" }}
+        >
+          <ShareOutlinedIcon style={{ margin: 5 }} fontSize="large" />
+          <span>99 shares</span>
+        </div>
+      </div>
+      <Divider />
     </div>
   );
 }

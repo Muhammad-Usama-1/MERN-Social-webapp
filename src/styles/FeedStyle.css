@@ -1,8 +1,9 @@
-.container {
+.appcontainer {
   position: relative;
   display: grid !important;
   margin-top: 62px;
-  grid-template-columns: 280px 1fr 250px;
+  grid-template-columns: 280px 1fr 280px;
+  background-color: #f8f9fa;
 }
 .container-tab {
   grid-template-columns: 100px 1fr 100px;
@@ -19,6 +20,7 @@
   right: 10px;
 }
 .content {
+  /* background-color: palevioletred; */
   /* padding: 10px; */
   margin: 10px;
   display: grid;
@@ -71,14 +73,34 @@
 .h img {
   width: 50px;
 }
-.posts {
-  background-color: #00b4cc;
-}
+
 .post {
   padding: 10px;
+  box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  border-radius: 5px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 .post--img {
-  width: 100%;
+  width: 300px;
   /* height: 300px; */
+}
+/* .post-media {
+  height: 200px !important;
+} */
+.post-media > img {
+  margin: 2px;
+  /* flex: 1; */
+}
+.post-reaction {
+  /* background-color: aqua; */
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.post-reaction > span {
+  color: #00b4cc;
+
+  margin-left: 5px;
 }

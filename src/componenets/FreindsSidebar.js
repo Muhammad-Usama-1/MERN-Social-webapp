@@ -20,8 +20,8 @@ function FreindsSidebar({ fsidebar }) {
 
   return (
     <div style={{ display: "flex" }}>
-      <div className="sidebar-mobile">
-        <ArrowForwardIcon onClick={runFunc} style={{ marginLeft: 10 }} />
+      <div className="fsidebar-mobile">
+        <ArrowForwardIcon onClick={runFunc} fontSize="large" />
       </div>
 
       <div className="">
@@ -35,16 +35,6 @@ function FreindsSidebar({ fsidebar }) {
           <div className="menu-bar">
             <div className="menu">
               <ul className="menu-links">
-                <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
                 <UserCard />
                 <UserCard />
                 <UserCard />
