@@ -40,7 +40,11 @@ function App() {
             </div>
           )}
         </div>
-        <div className={`content ${!matches990 ? "content-990" : null} `}>
+        <div
+          className={`content ${!matches990 ? "content-990" : null}
+        ${!matches680 ? "content-680" : null}
+        `}
+        >
           <div className="posts">
             <Post videoUrl={"https://www.youtube.com/embed/DN0AdgIq0FA"} />
             <Post

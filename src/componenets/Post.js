@@ -132,7 +132,9 @@ function Post({ videoUrl, images }) {
       </div>
 
       <div className="post-media">
-        {videoUrl && <EmededVideo videoUrl={videoUrl} />}
+        {videoUrl && (
+          <EmededVideo videoUrl={"https://www.youtube.com/embed/qYi-OLf5q5g"} />
+        )}
         {!videoUrl && images && (
           <img className="post--img" src={images[0]} alt="" />
         )}

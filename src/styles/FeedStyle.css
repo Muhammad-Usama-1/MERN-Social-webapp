@@ -20,7 +20,7 @@
 }
 .friendsSidebar {
   position: fixed;
-  right: 10px;
+  right: 0px;
 }
 .content {
   margin: 10px;
@@ -35,11 +35,17 @@
   grid-template-columns: 1fr;
   /* margin: 0 ; */
 }
+.content-680 {
+  padding: 0px;
+  margin: 2px;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* margin: 0 ; */
+}
 .vertical-flex {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
-  /* background-color: pink; */
 }
 
 .friends-sidebar {
@@ -87,20 +93,14 @@
   display: flex;
   flex-direction: column;
 }
-.post--img {
-  /* z-index: -10; */
-  /* width: 500px; */
-
-  /* height: 300px; */
-}
-/* .post-media {
-  height: 200px !important;
-} */
 .post-media {
   background-color: gray;
 }
 .post-media > img {
   width: 100%;
+}
+.post-media > iframe {
+  background-color: gray;
 }
 .post-reaction {
   padding: 5px;

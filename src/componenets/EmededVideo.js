@@ -6,8 +6,7 @@ function EmededVideo({ videoUrl }) {
   return (
     <div className="video-responsive">
       <iframe
-        width="853"
-        height="480"
+        height="300"
         src={`${videoUrl}`}
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

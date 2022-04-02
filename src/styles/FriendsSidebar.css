@@ -276,11 +276,9 @@ body.dark .home .text {
   color: #fff;
   padding: 0.85rem;
   border-radius: 30px 0 0 30px;
-  /* text-align: center; */
   justify-content: center;
   cursor: pointer;
   align-items: center;
-  margin: 10px;
   z-index: 10;
   display: inline;
   height: min-content;
