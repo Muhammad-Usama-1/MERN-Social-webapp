@@ -13,6 +13,8 @@ import VerticalContent from "./componenets/VerticalContent";
 import "./styles/FeedStyle.css";
 import "./styles/golbalStyles.css";
 import data from "./assets/posts.json";
+import FeedScreen from "./screens/FeedScreen";
+import ProfileScreen from "./screens/ProfileScreen";
 function App() {
   // console.log(data);
   let visible = true;
@@ -42,25 +44,10 @@ function App() {
             </div>
           )}
         </div>
-        <div
-          className={`content ${!matches990 ? "content-990" : null}
-        ${!matches680 ? "content-680" : null}
-        `}
-        >
-          <div className="posts">
-            {data.map((post) => (
-              <Post
-                videoUrl={post.videoUrl}
-                comments={post.comments}
-                images={post.images}
-                user={post.user}
-                like={post.like}
-              />
-            ))}
-          </div>
-          {/* <Fuck /> */}
-          {matches990 && <VerticalContent />}
-        </div>
+        {/* CONTENT FEED PAGE  */}
+        {/* <FeedScreen /> */}
+        <ProfileScreen />
+        {/* END FEED PAGE */}
         <div></div>
         <div className="friendsSidebar">
           {visible && <FreindsSidebar fsidebar={fsidebar} />}
