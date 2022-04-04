@@ -83,3 +83,24 @@
 .tab-friendCard > div {
   margin: 10px;
 }
+/* -----TAB ABOUTS-------------------- */
+.tab-about {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+/* ------TAB PHOTO GALLERY */
+.tab-photo-section > img {
+  max-width: 220px;
+  border-radius: 10px;
+  margin: 10px auto;
+  /* margin-bottom: 2px; */
+}
+.tab-photo-section {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  gap: 0.625rem !important;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); */
+}

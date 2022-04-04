@@ -45,8 +45,8 @@ function App() {
           )}
         </div>
         {/* CONTENT FEED PAGE  */}
-        <FeedScreen />
-        {/* <ProfileScreen /> */}
+        {/* <FeedScreen /> */}
+        <ProfileScreen />
         {/* END FEED PAGE */}
         <div></div>
         <div className="friendsSidebar">

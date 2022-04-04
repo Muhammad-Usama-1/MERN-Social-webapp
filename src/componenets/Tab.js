@@ -34,7 +34,13 @@ function Tab() {
         Content1
       </div>
       <div className={toggle === 2 ? "content-active" : "content-hidden"}>
-        Content2
+        <div className="tab-about">
+          <div>buttons</div>
+          <div>
+            <h4>Contact information</h4>
+            <hr />
+          </div>
+        </div>
       </div>
       <div className={toggle === 3 ? "content-active" : "content-hidden"}>
         <h1>Friends </h1>
@@ -115,7 +121,35 @@ function Tab() {
         </div>
       </div>
       <div className={toggle === 4 ? "content-active" : "content-hidden"}>
-        Content4
+        <div>
+          <h3>Phtotos</h3>
+          <div>
+            <button>phtoos of you</button>
+            <button>your photos</button>
+          </div>
+          <div className="tab-photo-section">
+            <img
+              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/59.9cbeb915.jpg"
+              alt=""
+            />
+            <img
+              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/54.d81af111.jpg"
+              alt=""
+            />
+            <img
+              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/57.0cd71def.jpg"
+              alt=""
+            />
+            <img
+              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/53.e97dd35c.jpg"
+              alt=""
+            />
+            <img
+              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/53.e97dd35c.jpg"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </>
   );
