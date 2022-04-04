@@ -38,7 +38,7 @@ function Tab() {
       </div>
       <div className={toggle === 3 ? "content-active" : "content-hidden"}>
         <h1>Friends </h1>
-        <div className="tab-friends-container">
+        <div className="tab-friendsbtn-container">
           <button>All friends</button>
           <button>Recently Added</button>
           <button>Close friends</button>
