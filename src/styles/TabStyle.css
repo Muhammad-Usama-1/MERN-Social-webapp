@@ -83,11 +83,7 @@
 .tab-friendCard > div {
   margin: 10px;
 }
-/* -----TAB ABOUTS-------------------- */
-.tab-about {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-}
+
 /* ------TAB PHOTO GALLERY */
 .tab-photo-section > img {
   max-width: 220px;
@@ -103,4 +99,79 @@
   gap: 0.625rem !important;
   grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   /* grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); */
+}
+
+/* -----TAB ABOUTS-------------------- */
+.tab-about {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  padding: 15px;
+}
+.inner-content-box {
+  margin-left: 10px;
+  /* padding: 20px; */
+}
+.inner-content-box > div {
+  margin-bottom: 50px;
+}
+.tab-about-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tab-about-btns > button {
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+  color: #489fe3;
+}
+.tab-about-btn {
+  margin-bottom: 10px;
+}
+.tab-about-btn-active {
+  background-color: #dcf0ff !important;
+  color: #ffffff;
+  /* font-weight: ; */
+}
+
+.inner-tab-hidden {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .tab-about {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.inner-content-box > h4 {
+  /* margin-bottom: 20px;
+  margin-top: 20px; */
+  font-weight: bold;
+}
+.inner-content-box > p {
+  /* margin-bottom: 20px; */
+  font-family: Poppins;
+  font-weight: 100;
+}
+.margin-line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.box p:first-of-type {
+  flex: 0.2;
+  /* background-color: Red; */
+}
+.box p:last-of-type {
+  flex: 0.6;
 }

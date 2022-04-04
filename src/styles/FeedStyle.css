@@ -8,7 +8,7 @@
 }
 .container-1500 {
   /* All game happening here in container */
-  grid-template-columns: 160px 1fr 160px;
+  grid-template-columns: 120px 1fr 120px;
 }
 .container-990 {
   grid-template-columns: 1fr;
