@@ -4,7 +4,7 @@
   margin-top: 62px;
   grid-template-columns: 280px 1fr 280px;
   background-color: #f8f9fa;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .container-1500 {
   /* All game happening here in container */

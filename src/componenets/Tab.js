@@ -142,8 +142,13 @@ function Tab() {
           <div
             className={inToggle === 2 ? "inner-tab-active" : "inner-tab-hidden"}
           >
-            <h4>Family info information</h4>
-            <hr />
+            <div className="inner-content-box">
+              <h4>Relationship</h4>
+              <div>
+                <p>+</p>
+                <p>Add your relationship status</p>
+              </div>
+            </div>
           </div>
           <div
             className={inToggle === 3 ? "inner-tab-active" : "inner-tab-hidden"}
