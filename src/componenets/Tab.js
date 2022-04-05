@@ -81,6 +81,65 @@ function Tab() {
                   <h3>Photos </h3>
                   <button>add</button>
                 </div>
+                <div className="timeline-event-photos">
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              {/* =========== */}
+              <div className="timeline-event-photo">
+                <div className="live-event--title">
+                  <h3>Friends </h3>
+                  <button>add</button>
+                </div>
+                <div className="timeline-event-photos">
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
             <div className="posts">
