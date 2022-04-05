@@ -1,5 +1,10 @@
 import React, { useState } from "react";
+import UserCard from "../reusable/UserCard";
 import "../styles/TabStyle.css";
+import SearchIcon from "@mui/icons-material/Search";
+import StarsIcon from "@mui/icons-material/Stars";
+import Post from "./Post";
+import data from "../assets/posts.json";
 function Tab() {
   const [toggle, setToggle] = useState(2);
   const [inToggle, setInToggle] = useState(1);
@@ -31,8 +36,66 @@ function Tab() {
           Photos
         </button>
       </div>
-      <div className={toggle === 1 ? "content-active" : "content-hidden"}>
-        Content1
+      <div
+        className={toggle === 1 ? "content-active-timeline" : "content-hidden"}
+      >
+        <div style={{ backgroundColor: "none" }}>
+          {/* TIMELINE SECTION START */}
+          <div className="tabtimeline-box">
+            <div className="event-box">
+              <div className="timeline--offer">
+                <StarsIcon />
+                <p>27 Offers for you</p>
+              </div>
+              <div className="live-event">
+                <div className="live-event--title">
+                  <h3>Life Event </h3>
+                  <button>create</button>
+                </div>
+
+                <div className="live-event-description">
+                  <img
+                    className="live-event--image"
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/07.9230e6d0.jpg"
+                    alt=""
+                  />
+                  <p className="live-event-description-title">
+                    Started new job
+                  </p>
+                  <p>january 24 2022</p>
+                </div>
+                <div className="live-event-description">
+                  <img
+                    className="live-event--image"
+                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/07.9230e6d0.jpg"
+                    alt=""
+                  />
+                  <p className="live-event-description-title">
+                    Started new job
+                  </p>
+                  <p>january 24 2022</p>
+                </div>
+              </div>
+              <div className="timeline-event-photo">
+                <div className="live-event--title">
+                  <h3>Photos </h3>
+                  <button>add</button>
+                </div>
+              </div>
+            </div>
+            <div className="posts">
+              {data.map((post) => (
+                <Post
+                  videoUrl={post.videoUrl}
+                  comments={post.comments}
+                  images={post.images}
+                  user={post.user}
+                  like={post.like}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
       <div className={toggle === 2 ? "content-active" : "content-hidden"}>
         <div className="tab-about">
@@ -143,37 +206,122 @@ function Tab() {
             className={inToggle === 2 ? "inner-tab-active" : "inner-tab-hidden"}
           >
             <div className="inner-content-box">
-              <h4>Relationship</h4>
-              <div>
+              <h4 style={{ marginBottom: "10px" }}>Relationship</h4>
+              <div style={{ display: "flex" }}>
                 <p>+</p>
                 <p>Add your relationship status</p>
+              </div>
+              <h4 style={{ marginBottom: "10px" }}>Family Members</h4>
+              <div style={{ display: "flex" }}>
+                <p>+</p>
+                <p>Add family members</p>
+              </div>
+              <div>
+                <div className="tab-relation-user-box">
+                  <UserCard />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <span>Edit</span>
+                    <SearchIcon />
+                  </div>
+                </div>
+                <div className="tab-relation-user-box">
+                  <UserCard />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <span>Edit</span>
+                    <SearchIcon />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div
             className={inToggle === 3 ? "inner-tab-active" : "inner-tab-hidden"}
           >
-            <h4>work and ecucation</h4>
-            <hr />
+            <div className="inner-content-box">
+              <h4 style={{ marginBottom: "10px" }}>Work</h4>
+              <div style={{ display: "flex" }}>
+                <p>+</p>
+                <p>Add your workplace</p>
+              </div>
+              <div>
+                <div className="tab-relation-user-box">
+                  <UserCard />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <span>Edit</span>
+                    <SearchIcon />
+                  </div>
+                </div>
+                <div className="tab-relation-user-box">
+                  <UserCard />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <span>Edit</span>
+                    <SearchIcon />
+                  </div>
+                </div>
+              </div>
+              <h4 style={{ marginBottom: "10px" }}>Professional skills</h4>
+              <div style={{ display: "flex" }}>
+                <p>+</p>
+                <p>Add Professional skills</p>
+              </div>
+              <h4 style={{ marginBottom: "10px" }}>college</h4>
+              <div style={{ display: "flex" }}>
+                <p>+</p>
+                <p>Add college</p>
+              </div>
+              <div>
+                <div className="tab-relation-user-box">
+                  <UserCard />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <span>Edit</span>
+                    <SearchIcon />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             className={inToggle === 4 ? "inner-tab-active" : "inner-tab-hidden"}
           >
-            <h4>palce yo have lived</h4>
-            <hr />
+            <div className="inner-content-box">
+              <h4>Current city and home town</h4>
+              <div>
+                <div className="tab-relation-user-box">
+                  <UserCard />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <span>Edit</span>
+                    <SearchIcon />
+                  </div>
+                </div>
+                <div className="tab-relation-user-box">
+                  <UserCard />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <span>Edit</span>
+                    <SearchIcon />
+                  </div>
+                </div>
+              </div>
+              <h4 style={{ marginBottom: "10px" }}>Other place lived</h4>
+              <div style={{ display: "flex" }}>
+                <p>+</p>
+                <p>Add palace</p>
+              </div>
+            </div>
           </div>
           <div
             className={inToggle === 5 ? "inner-tab-active" : "inner-tab-hidden"}
           >
             <div className="inner-content-box">
-              <h4>About You</h4>
-              <p>Hi i am Usama i have been designing and coding for 1 years </p>
-              <h4>Others name</h4>
+              <h4 style={{ marginBottom: "20px" }}> About You</h4>
+              <p style={{ marginBottom: "20px" }}>
+                Hi i am Usama i have been designing and coding for 1 years{" "}
+              </p>
+              <h4 style={{ marginBottom: "20px" }}>Others name</h4>
 
-              <p>Bini Rock</p>
-              <h4>Favourite qqoutes</h4>
+              <p style={{ marginBottom: "20px" }}>Bini Rock</p>
+              <h4 style={{ marginBottom: "20px" }}>Favourite qqoutes</h4>
 
-              <p>
+              <p style={{ marginBottom: "20px" }}>
                 Your time is limited, so don't waste it living someone else's
                 life. ..
               </p>

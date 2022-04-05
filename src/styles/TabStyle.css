@@ -234,3 +234,75 @@
     margin-bottom: 10px;
   }
 }
+.tab-relation-user-box {
+  display: flex;
+
+  justify-content: space-between;
+}
+/* -------------TIMELINE STYLING GOES  HERE */
+.tabtimeline-box {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+@media screen and (max-width: 980px) {
+  .tabtimeline-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+}
+.event-box {
+  margin-right: 10px;
+}
+.timeline--offer {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  /* color: #ffffff; */
+  color: #00b4cc;
+}
+.timeline--offer > p {
+  margin: 5px;
+}
+.live-event {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  /* margin: 10px; */
+  /* border-radius: 10px; */
+}
+.live-event--title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.live-event--title > button {
+  border: none;
+  background-color: transparent;
+  color: #00b4cc;
+  font-size: 19px;
+}
+.live-event--title > button:hover {
+  border: none;
+  background-color: transparent;
+  color: #489fe3;
+  font-size: 19px;
+}
+
+.live-event--image {
+  max-width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.live-event-description {
+  margin-bottom: 20px;
+}
+.live-event-description-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
