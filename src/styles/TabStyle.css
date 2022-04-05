@@ -5,6 +5,10 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.tab-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 .tab-btns > button {
   flex: 1;
   background-color: #fff;
@@ -44,6 +48,9 @@
   background: none;
   padding: 10px;
   cursor: pointer;
+}
+.tab-friendsbtn-container > button:hover {
+  color: #489fe3;
 }
 .tab-friendCard {
   background-color: #ffffff;
@@ -138,7 +145,18 @@
   color: #ffffff;
   /* font-weight: ; */
 }
-
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+.btn:hover {
+  background-color: #00b4cc;
+  color: #ffffff;
+}
+.content-active-box {
+  padding: 10px;
+}
 .inner-tab-hidden {
   display: none;
 }
@@ -184,7 +202,10 @@
     justify-content: space-between;
   }
   .box p:last-of-type {
-    flex: 0;
+    flex: 0.5;
+  }
+  .box p:first-of-type {
+    flex: 1;
   }
 }
 @media screen and (max-width: 300px) {
@@ -319,4 +340,10 @@
   margin-bottom: 20px;
   grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
   /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+}
+.timeline-event-photos div > img {
+  max-width: 100%;
+}
+.small-text {
+  font-size: 13px;
 }

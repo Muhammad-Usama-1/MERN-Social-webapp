@@ -79,7 +79,7 @@ function Tab() {
               <div className="timeline-event-photo">
                 <div className="live-event--title">
                   <h3>Photos </h3>
-                  <button>add</button>
+                  <button>Add photos</button>
                 </div>
                 <div className="timeline-event-photos">
                   <img
@@ -112,33 +112,72 @@ function Tab() {
               <div className="timeline-event-photo">
                 <div className="live-event--title">
                   <h3>Friends </h3>
-                  <button>add</button>
+                  <button>Add friends</button>
                 </div>
                 <div className="timeline-event-photos">
-                  <img
-                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
-                    alt=""
-                  />
-                  <img
-                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
-                    alt=""
-                  />
-                  <img
-                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
-                    alt=""
-                  />
-                  <img
-                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
-                    alt=""
-                  />
-                  <img
-                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
-                    alt=""
-                  />
-                  <img
-                    src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
-                    alt=""
-                  />
+                  <div>
+                    <img
+                      src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
+                      alt=""
+                    />
+                    <p className="small-text">Laura wilson</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g8.56451294.jpg"
+                      alt=""
+                    />
+                    <p className="small-text">Laura wilson</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/g1.65c7b081.jpg"
+                      alt=""
+                    />
+                    <p className="small-text">Laura wilson</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/09.89ddf2af.jpg"
+                      alt=""
+                    />
+                    <p className="small-text">Laura wilson</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/08.22cf44c6.jpg"
+                      alt=""
+                    />
+                    <p className="small-text">Laura wilson</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/07.bb7d261b.jpg"
+                      alt=""
+                    />
+                    <p className="small-text">Laura wilson</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/10.887098b9.jpg"
+                      alt=""
+                    />
+                    <p className="small-text">Laura wilson</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/06.753c45f1.jpg"
+                      alt=""
+                    />
+                    <p className="small-text">Laura wilson</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/06.753c45f1.jpg"
+                      alt=""
+                    />
+                    <p className="small-text">Laura wilson</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -389,89 +428,91 @@ function Tab() {
         </div>
       </div>
       <div className={toggle === 3 ? "content-active" : "content-hidden"}>
-        <h1>Friends </h1>
-        <div className="tab-friendsbtn-container">
-          <button>All friends</button>
-          <button>Recently Added</button>
-          <button>Close friends</button>
-          <button>Home /town</button>
-          <button>Following</button>
-        </div>
-        <div className="friendsCard-container">
-          <div className="tab-friendCard">
-            <img
-              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
-              alt=""
-            />
-            <div>
-              <p>Petey Curiser</p>
-              <span>15 Friends</span>
-            </div>
-            <button style={{ marginLeft: "auto" }}>Friends</button>
+        <div className="content-active-box">
+          <h1>Friends </h1>
+          <div className="tab-friendsbtn-container">
+            <button>All friends</button>
+            <button>Recently Added</button>
+            <button>Close friends</button>
+            <button>Home /town</button>
+            <button>Following</button>
           </div>
-          <div className="tab-friendCard">
-            <img
-              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
-              alt=""
-            />
-            <div>
-              <p>Petey Curiser</p>
-              <span>15 Friends</span>
+          <div className="friendsCard-container">
+            <div className="tab-friendCard">
+              <img
+                src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
+                alt=""
+              />
+              <div>
+                <p>Petey Curiser</p>
+                <span>15 Friends</span>
+              </div>
+              <button style={{ marginLeft: "auto" }}>Friends</button>
             </div>
-            <button style={{ marginLeft: "auto" }}>Friends</button>
-          </div>
-          <div className="tab-friendCard">
-            <img
-              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
-              alt=""
-            />
-            <div>
-              <p>Petey Curiser</p>
-              <span>15 Friends</span>
+            <div className="tab-friendCard">
+              <img
+                src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
+                alt=""
+              />
+              <div>
+                <p>Petey Curiser</p>
+                <span>15 Friends</span>
+              </div>
+              <button style={{ marginLeft: "auto" }}>Friends</button>
             </div>
-            <button style={{ marginLeft: "auto" }}>Friends</button>
-          </div>
-          <div className="tab-friendCard">
-            <img
-              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
-              alt=""
-            />
-            <div>
-              <p>Petey Curiser</p>
-              <span>15 Friends</span>
+            <div className="tab-friendCard">
+              <img
+                src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
+                alt=""
+              />
+              <div>
+                <p>Petey Curiser</p>
+                <span>15 Friends</span>
+              </div>
+              <button style={{ marginLeft: "auto" }}>Friends</button>
             </div>
-            <button style={{ marginLeft: "auto" }}>Friends</button>
-          </div>
-          <div className="tab-friendCard">
-            <img
-              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
-              alt=""
-            />
-            <div>
-              <p>Petey Curiser</p>
-              <span>15 Friends</span>
+            <div className="tab-friendCard">
+              <img
+                src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
+                alt=""
+              />
+              <div>
+                <p>Petey Curiser</p>
+                <span>15 Friends</span>
+              </div>
+              <button style={{ marginLeft: "auto" }}>Friends</button>
             </div>
-            <button style={{ marginLeft: "auto" }}>Friends</button>
-          </div>
-          <div className="tab-friendCard">
-            <img
-              src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
-              alt=""
-            />
-            <div>
-              <p>Petey Curiser</p>
-              <span>15 Friends</span>
+            <div className="tab-friendCard">
+              <img
+                src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
+                alt=""
+              />
+              <div>
+                <p>Petey Curiser</p>
+                <span>15 Friends</span>
+              </div>
+              <button style={{ marginLeft: "auto" }}>Friends</button>
             </div>
-            <button style={{ marginLeft: "auto" }}>Friends</button>
+            <div className="tab-friendCard">
+              <img
+                src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/05.803eaf62.jpg"
+                alt=""
+              />
+              <div>
+                <p>Petey Curiser</p>
+                <span>15 Friends</span>
+              </div>
+              <button style={{ marginLeft: "auto" }}>Friends</button>
+            </div>
           </div>
         </div>
       </div>
       <div className={toggle === 4 ? "content-active" : "content-hidden"}>
-        <div>
-          <h3>Phtotos</h3>
+        <div className="content-active-box">
+          <h3 className="tab-heading">Photos</h3>
           <div>
-            <button>phtoos of you</button>
-            <button>your photos</button>
+            <button className="btn">photos of you</button>
+            <button className="btn">your photos</button>
           </div>
           <div className="tab-photo-section">
             <img
