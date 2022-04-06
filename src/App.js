@@ -6,9 +6,11 @@ import Sidebar from "./componenets/Sidebar";
 
 import "./styles/FeedStyle.css";
 import "./styles/golbalStyles.css";
+import "./styles/layoutStyle.css";
 // import data from "./assets/posts.json";
 import FeedScreen from "./screens/FeedScreen";
 import ProfileScreen from "./screens/ProfileScreen";
+import FriendListScreen from "./screens/FriendListScreen";
 function App() {
   // console.log(data);
   // let visible = true;
@@ -18,13 +20,14 @@ function App() {
   return (
     <>
       <AppBar sidebar={sidebar} />
-      <main className={`container`}>
+      <main className="container">
         <div></div>
         <div className="sidebar-fixed">
           <Sidebar sidebar={sidebar} />
         </div>
         {/* <FeedScreen /> */}
-        <ProfileScreen />
+        {/* <ProfileScreen /> */}
+        <FriendListScreen />
         <div></div>
         <div className="friendsSidebar">
           <FreindsSidebar fsidebar={fsidebar} />

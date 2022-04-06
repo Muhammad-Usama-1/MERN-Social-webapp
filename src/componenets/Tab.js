@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import UserCard from "../reusable/UserCard";
-import "../styles/TabStyle.css";
 import SearchIcon from "@mui/icons-material/Search";
 import StarsIcon from "@mui/icons-material/Stars";
+
+import UserCard from "../reusable/UserCard";
+import "../styles/TabStyle.css";
 import Post from "./Post";
 import data from "../assets/posts.json";
 function Tab() {

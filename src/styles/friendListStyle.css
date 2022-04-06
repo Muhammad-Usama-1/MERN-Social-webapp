@@ -1,0 +1,36 @@
+.content-friendlist {
+  margin: 10px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (max-width: 680px) {
+  .content-friendlist {
+    padding: 0px;
+    margin: 2px;
+  }
+}
+.friendlist--header {
+  position: relative;
+}
+.friendlist__header--title {
+  padding: 20px;
+  background-color: var(--secondry-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.friendlist__header--image {
+  max-width: 100%;
+}
+/* ------------------------------------ */
+.friendlist-cards {
+  display: flex;
+}
+.friendlist-card {
+  width: 50%;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}

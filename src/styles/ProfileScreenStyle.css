@@ -3,7 +3,6 @@
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  /* background-color: aliceblue; */
 }
 @media screen and (max-width: 680px) {
   .content-profile {
@@ -18,8 +17,7 @@
   border-radius: 10px;
 }
 .position-realative {
-  z-index: 0;
-  position: relative;
+  /* position: relative; */
 }
 .profile--header-pic {
   max-width: 100%;

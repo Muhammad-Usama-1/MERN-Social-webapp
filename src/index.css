@@ -1,14 +1,9 @@
-/* Google Font Import - Poppins */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Poppins", sans-serif; */
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #777d74;
@@ -19,9 +14,12 @@
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
   --primary-color: #695cfe;
+  --primary-color: #00b4cc;
+  --secondry-color: #ffffff;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
   --text-color: #707070;
+  --dark-color: #000;
 
   /* ====== Transition ====== */
   --tran-03: all 0.2s ease;
@@ -31,11 +29,8 @@
 }
 
 body {
-  /* font-size: 150% !important; */
   min-height: 100vh;
-  /* background-color: var(--body-color); */
   transition: var(--tran-05);
-  /* background-color: palevioletred; */
 }
 
 ::selection {
