@@ -202,7 +202,8 @@
     justify-content: space-between;
   }
   .box p:last-of-type {
-    flex: 0.5;
+    flex: 1;
+    text-align: right;
   }
   .box p:first-of-type {
     flex: 1;
@@ -273,7 +274,7 @@
     grid-template-rows: min-content 1fr;
   }
   .event-box {
-    margin-right: 0px;
+    margin-right: 0px !important;
   }
 }
 .event-box {
@@ -290,6 +291,13 @@
 }
 .timeline--offer > p {
   margin: 5px;
+}
+
+/* ------ */
+@media screen and (max-width: 575px) {
+  .timeline--offer > p {
+    margin: 0px !important;
+  }
 }
 .live-event {
   background-color: #ffffff;

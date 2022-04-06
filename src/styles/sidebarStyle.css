@@ -8,6 +8,8 @@
   background: var(--sidebar-color);
   /* background-color: palevioletred; */
   transition: var(--tran-05);
+  font-family: "Montserrat", sans-serif;
+
   z-index: 100;
 }
 .sidebar.close {

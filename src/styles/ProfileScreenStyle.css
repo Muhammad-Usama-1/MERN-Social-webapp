@@ -19,7 +19,7 @@
 }
 .position-realative {
   z-index: 0;
-  /* position: relative; */
+  position: relative;
 }
 .profile--header-pic {
   max-width: 100%;
@@ -27,12 +27,17 @@
 }
 .profile-img {
   position: absolute;
-  z-index: 0;
   left: 50%;
-  /* top: 70%; */
   text-align: center;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 300px) {
+  .profile-header {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+}
+
 .profile-round-pic {
   /* width: 100px; */
   width: 20%;

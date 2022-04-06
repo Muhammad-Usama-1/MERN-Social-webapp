@@ -1,13 +1,13 @@
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import React from "react";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useMediaQuery } from "@mui/material";
-import UserCard from "../reusable/UserCard";
 
+import UserCard from "../reusable/UserCard";
 import "../styles/FriendsSidebar.css";
 
 function FreindsSidebar({ fsidebar }) {
   // const matches = useMediaQuery("(min-width:980px)");
-  const matches990 = useMediaQuery("(min-width:990px)");
+  // const matches990 = useMediaQuery("(min-width:990px)");
 
   const matches1300 = useMediaQuery("(min-width:1300px)");
   const matches1500 = useMediaQuery("(min-width:1500px)");
