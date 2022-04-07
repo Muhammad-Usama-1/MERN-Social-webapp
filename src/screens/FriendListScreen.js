@@ -1,4 +1,5 @@
 import React from "react";
+import FriendCard from "../reusable/FriendCard";
 import "../styles/friendListStyle.css";
 function FriendListScreen() {
   return (
@@ -9,13 +10,16 @@ function FriendListScreen() {
           src="https://templates.iqonic.design/socialv/bs5/react/build/static/media/profile-bg3.ac4a1ef7.jpg"
           alt=""
         />
+        <div className="friendlist__header--title">Friend List Screen</div>
       </div>
-      <div className="friendlist__header--title">Friend List Screen</div>
       <div className="friendlist-cards">
-        <div className="friendlist-card">
-          <img src="" alt="" />
-        </div>
-        <div className="friendlist-card">card2</div>
+        <FriendCard />
+        <FriendCard />
+        <FriendCard />
+        <FriendCard />
+        <FriendCard />
+        <FriendCard />
+        <FriendCard />
       </div>
     </div>
   );

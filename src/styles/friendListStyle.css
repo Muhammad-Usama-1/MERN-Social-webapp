@@ -27,10 +27,91 @@
 /* ------------------------------------ */
 .friendlist-cards {
   display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 990px) {
+  .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .friendlist__header--title {
+    padding: 5px;
+    background-color: var(--secondry-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .friendlist-card {
-  width: 50%;
+  width: 45%;
   flex: 0 0 auto;
   overflow: hidden;
   border-radius: 10px;
+  margin-bottom: 10px !important;
+  background-color: var(--secondry-color);
+  padding-bottom: 20px;
+  margin: auto;
+}
+.friendlist-card--header > img {
+  max-width: 100%;
+}
+.d-flex {
+  display: flex;
+}
+.friendlist-card-info {
+  padding: 20px;
+}
+.friendlist-card-info--img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  object-fit: contain;
+  margin-top: -60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 990px) {
+  .friendlist-card {
+    position: relative;
+  }
+  .friendlist-card-info--img {
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card-info-box {
+    margin-top: 50px;
+  }
+  .card-info-box--btn {
+    display: block;
+    margin: 0 auto;
+    /* text-align: center; */
+  }
+}
+.card-info-box {
+  padding: 20px;
+}
+.card-info--title {
+  color: var(--primary-color);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.card-info-box--btn {
+  padding: 11px;
+  background-color: var(--primary-color);
+  color: var(--secondry-color);
+  border-radius: 9px;
+  border: none;
+}
+@media screen and (max-width: 765px) {
+  .friendlist-cards {
+    padding: 20px;
+  }
+  .friendlist-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
