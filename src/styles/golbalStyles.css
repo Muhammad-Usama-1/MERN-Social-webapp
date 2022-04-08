@@ -83,3 +83,118 @@
   width: 100%;
   z-index: 1000;
 }
+/* ------------USER BANNER  -------------------------*/
+.profile-header {
+  background-color: #ffffff;
+  padding-bottom: 20px;
+  /* padding: 20px; */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.position-realative {
+  position: relative;
+}
+.profile--header-pic {
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+.profile-img {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 300px) {
+  .profile-header {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+}
+
+.profile-round-pic {
+  /* width: 100px; */
+  width: 20%;
+}
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons > img {
+  margin: 10px;
+}
+.user-follower-info div > p {
+  font-weight: bold;
+  margin: 10px;
+}
+.user-follower-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-follower-info {
+  display: flex;
+}
+@media screen and (max-width: 780px) {
+  .profile-info {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .user-follower-info {
+    flex: 1;
+    /* justify-conte; */
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .profile-header {
+    margin: 10px;
+  }
+  .profile--header-pic {
+    max-width: 100%;
+  }
+  .icons {
+    justify-content: flex-start;
+  }
+  .user-follower-info {
+    justify-content: flex-start;
+  }
+}
+/* -----------PHTOS CARD STYLING--------------------- */
+.timeline-event-photo {
+  background-color: var(--secondry-color);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.live-event--title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.live-event--title > button {
+  border: none;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-size: 19px;
+}
+.live-event--title > button:hover {
+  border: none;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-size: 19px;
+}
+.timeline-event-photos {
+  display: grid;
+  grid-gap: 5px !important;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+}
+.timeline-event-photos div > img {
+  max-width: 100%;
+}
+/* ----------------FRIENDS PHOTOS CARD------------ */

@@ -3,6 +3,7 @@ import Search from "@mui/icons-material/Search";
 import { useMediaQuery } from "@mui/material";
 
 import "../styles/sidebarStyle.css";
+import { Link } from "react-router-dom";
 
 function Sidebar({ sidebar }) {
   const matches1300 = useMediaQuery("(min-width:1300px)");
@@ -19,22 +20,28 @@ function Sidebar({ sidebar }) {
         <div className="menu">
           <ul className="menu-links">
             <li className="nav-link">
-              <a href="/">
+              <Link to="/">
                 <Search />
-                <span className="text nav-text">Dashboard</span>
-              </a>
+                <span className="text nav-text">NewsFeed</span>
+              </Link>
             </li>
             <li className="nav-link">
-              <a href="/">
+              <Link to="profile">
                 <Search />
-                <span className="text nav-text">Dashboard</span>
-              </a>
+                <span className="text nav-text">Profile</span>
+              </Link>
             </li>
             <li className="nav-link">
-              <a href="/">
+              <Link to={"/friends"}>
                 <Search />
-                <span className="text nav-text">Dashboard</span>
-              </a>
+                <span className="text nav-text">Friend List</span>
+              </Link>
+            </li>
+            <li className="nav-link">
+              <Link to={"/friendprofile"}>
+                <Search />
+                <span className="text nav-text">Friend Profile</span>
+              </Link>
             </li>
             <li className="nav-link">
               <a href="/">
