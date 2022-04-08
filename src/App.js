@@ -1,18 +1,21 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppBar from "./componenets/AppBar";
-import FreindsSidebar from "./componenets/FreindsSidebar";
 
+import FreindsSidebar from "./componenets/FreindsSidebar";
 import Sidebar from "./componenets/Sidebar";
 
-import "./styles/FeedStyle.css";
-import "./styles/golbalStyles.css";
-import "./styles/layoutStyle.css";
 // import data from "./assets/posts.json";
+// --------------Screens -------------------
 import FeedScreen from "./screens/FeedScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import FriendListScreen from "./screens/FriendListScreen";
 import FriendProfileScreen from "./screens/FriendProfileScreen";
+// ------------Styles ---------------------
+import "./styles/FeedStyle.css";
+import "./styles/golbalStyles.css";
+import "./styles/layoutStyle.css";
+import GroupScreen from "./screens/GroupScreen";
 function App() {
   // console.log(data);
   // let visible = true;
@@ -32,6 +35,7 @@ function App() {
           <Route path="profile" element={<ProfileScreen />} />
           <Route path="friends" element={<FriendListScreen />} />
           <Route path="/friendprofile" element={<FriendProfileScreen />} />
+          <Route path="/group" element={<GroupScreen />} />
         </Routes>
         <div></div>
         <div className="friendsSidebar">

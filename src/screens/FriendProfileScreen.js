@@ -5,6 +5,7 @@ import UserBanner from "../reusable/UserBanner";
 import "../styles/FriendProfileStyle.css";
 import data from "../assets/posts.json";
 import Post from "../componenets/Post";
+import UserAbout from "../reusable/UserAbout";
 
 function FriendProfileScreen() {
   return (
@@ -12,13 +13,15 @@ function FriendProfileScreen() {
       <UserBanner />
       <div className="timeline-box">
         <div>
+          <UserAbout />
           <PhotosCard />
           <FriendsPhotoCard />
         </div>
         <div>
           <div className="posts">
-            {data.map((post) => (
+            {data.map((post, i) => (
               <Post
+                key={i}
                 videoUrl={post.videoUrl}
                 comments={post.comments}
                 images={post.images}

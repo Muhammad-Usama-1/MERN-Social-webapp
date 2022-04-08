@@ -197,4 +197,58 @@
 .timeline-event-photos div > img {
   max-width: 100%;
 }
-/* ----------------FRIENDS PHOTOS CARD------------ */
+/* ---------------USER ABOUT CARD---------------- */
+
+.user-about-card {
+  padding: 20px;
+  background-color: var(--secondry-color);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.user-about-card--title {
+  margin-bottom: 10px;
+  font-weight: 200;
+  font-family: "Poppins";
+}
+.about-card-details {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.about-card-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.about-card-info > span {
+  margin-left: 10px;
+}
+/* ------------PAGE HEADER STZYLE--------------- */
+.friendlist--header {
+  position: relative;
+}
+
+.friendlist__header--title {
+  padding: 20px;
+  background-color: var(--secondry-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.friendlist__header--image {
+  max-width: 100%;
+}
+.friendlist-card--header > img {
+  max-width: 100%;
+}
+@media screen and (max-width: 680px) {
+  .friendlist__header--title {
+    padding: 5px;
+    background-color: var(--secondry-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

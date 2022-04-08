@@ -15,7 +15,8 @@
   display: grid !important;
   margin-top: 62px;
   grid-template-columns: 280px 1fr 280px;
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
+  background-color: var(--body-color);
 }
 @media screen and (max-width: 1500px) {
   .container {

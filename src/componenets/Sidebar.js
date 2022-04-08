@@ -6,6 +6,10 @@ import "../styles/sidebarStyle.css";
 import { Link } from "react-router-dom";
 
 function Sidebar({ sidebar }) {
+  // In future this function will do two thing
+  // 1) Close the sidebar if in the mobile screen
+  // 2) Navigate to respective page
+  const handleNavigate = () => {};
   const matches1300 = useMediaQuery("(min-width:1300px)");
   const matchesbig = useMediaQuery("(min-width:1500px)");
 
@@ -41,6 +45,12 @@ function Sidebar({ sidebar }) {
               <Link to={"/friendprofile"}>
                 <Search />
                 <span className="text nav-text">Friend Profile</span>
+              </Link>
+            </li>
+            <li onClick={() => handleNavigate("pageName")} className="nav-link">
+              <Link to={"/group"}>
+                <Search />
+                <span className="text nav-text">Your Groups</span>
               </Link>
             </li>
             <li className="nav-link">
