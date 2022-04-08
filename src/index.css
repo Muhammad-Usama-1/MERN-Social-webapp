@@ -15,7 +15,9 @@
   --sidebar-color: #fff;
   --primary-color: #00b4cc;
   --secondry-color: #ffffff;
-  --primary-color-light: #f6f5ff;
+  /* --primary-color-light: #f6f5ff; */
+  --primary-color-light: #f8f9fa;
+
   --text-color: #707070;
   --dark-color: #000;
 
@@ -24,6 +26,8 @@
   --tran-03: all 0.3s ease;
   --tran-04: all 0.3s ease;
   --tran-05: all 0.3s ease;
+
+  --box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
 }
 
 body {

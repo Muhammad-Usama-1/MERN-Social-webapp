@@ -31,6 +31,7 @@
   background-color: var(--secondry-color);
   padding-bottom: 20px;
   margin: auto;
+  box-shadow: var(--box-shadow);
 }
 
 .d-flex {

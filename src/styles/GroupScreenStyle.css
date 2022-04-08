@@ -15,6 +15,7 @@
   text-align: center;
   border-radius: 10px;
   background-color: var(--secondry-color);
+  box-shadow: var(--box-shadow);
 }
 .groups-cards {
   display: grid;

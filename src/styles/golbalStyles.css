@@ -85,11 +85,14 @@
 }
 /* ------------USER BANNER  -------------------------*/
 .profile-header {
+  /* background-color: #ffffff; */
   background-color: #ffffff;
   padding-bottom: 20px;
   /* padding: 20px; */
   border-radius: 10px;
   margin-bottom: 10px;
+  box-shadow: var(--box-shadow);
+  /* box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1); */
 }
 .position-realative {
   position: relative;

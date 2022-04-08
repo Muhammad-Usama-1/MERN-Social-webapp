@@ -3,6 +3,7 @@
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 20px;
+  box-shadow: var(--box-shadow);
 }
 .tab-heading {
   font-size: 30px;
@@ -26,6 +27,7 @@
   background-color: var(--secondry-color);
   padding: 10px;
   border-radius: 10px;
+  box-shadow: var(--box-shadow);
 }
 .content-hidden {
   display: none;
