@@ -53,6 +53,12 @@ function Sidebar({ sidebar }) {
                 <span className="text nav-text">Your Groups</span>
               </Link>
             </li>
+            <li onClick={() => handleNavigate("pageName")} className="nav-link">
+              <Link to={"/profile-photo"}>
+                <Search />
+                <span className="text nav-text">Your Photos</span>
+              </Link>
+            </li>
             <li className="nav-link">
               <a href="/">
                 <Search />

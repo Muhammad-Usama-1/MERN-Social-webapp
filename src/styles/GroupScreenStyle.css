@@ -76,3 +76,28 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
+/* ------------------ */
+.round-photos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.round-photos:first-child {
+  margin-left: 0px;
+}
+
+.photo-line-round {
+  z-index: 0;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  /* object-fit: contain; */
+  margin-left: -15px;
+  border-right: 2px solid var(--primary-color);
+}
+.photo-line-round:hover {
+  z-index: 1;
+  /* position: static; */
+}
