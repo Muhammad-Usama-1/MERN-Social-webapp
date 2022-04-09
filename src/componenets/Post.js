@@ -11,7 +11,6 @@ import CameraAltIcon from "@mui/icons-material/CameraAlt";
 
 import "../styles/PostStyle.css";
 function Post({ videoUrl, images, user, comments, like }) {
-  console.log(user);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {

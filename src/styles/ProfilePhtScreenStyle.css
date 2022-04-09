@@ -1,46 +1,26 @@
-.content-profilephoto {
+.content-media {
   margin: 10px;
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 1fr 1fr !important; */
 }
 @media screen and (max-width: 680px) {
-  .content-profilephoto {
+  .content-media {
     padding: 0px;
     margin: 2px;
   }
 }
-@media screen and (max-width: 480px) {
-  .profile-photos-container {
-    flex-direction: column;
-  }
-  .profile-photos-container img {
-    max-width: 100%;
-    border-radius: 10px;
-    width: 100%;
-  }
-}
 .profile-photos-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  /* margin: 0 auto; */
+}
+
+.container-detail {
   width: 100%;
+  /* margin: 10px; */
 }
-.profile-photos-container > div {
-  margin: auto;
-  position: relative;
-}
-.photo-hover {
-  border-radius: 10px;
-  width: 300px;
-}
-.hovered-element {
-  width: 100%;
-  position: absolute;
-  bottom: 1%;
-  left: 0;
-  color: #fff;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
+.container--img {
+  max-width: 100%;
 }

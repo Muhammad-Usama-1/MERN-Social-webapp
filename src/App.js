@@ -17,6 +17,7 @@ import "./styles/golbalStyles.css";
 import "./styles/layoutStyle.css";
 import GroupScreen from "./screens/GroupScreen";
 import ProfilePhotoScreen from "./screens/ProfilePhotoScreen";
+import ProfileVideoScreen from "./screens/ProfileVideoScreen";
 function App() {
   // console.log(data);
   // let visible = true;
@@ -34,7 +35,8 @@ function App() {
         <Routes>
           <Route path="/" element={<FeedScreen />} />
           <Route path="profile" element={<ProfileScreen />} />
-          <Route path="profile-photo" element={<ProfilePhotoScreen />} />
+          <Route path="profile-image" element={<ProfilePhotoScreen />} />
+          <Route path="profile-video" element={<ProfileVideoScreen />} />
           <Route path="friends" element={<FriendListScreen />} />
           <Route path="friendprofile" element={<FriendProfileScreen />} />
           <Route path="group" element={<GroupScreen />} />

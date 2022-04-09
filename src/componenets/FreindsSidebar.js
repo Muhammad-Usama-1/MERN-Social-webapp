@@ -23,7 +23,7 @@ function FreindsSidebar({ fsidebar }) {
   return (
     <div style={{ display: "flex" }}>
       <div onClick={runFunc} className="fsidebar-mobile">
-        <ArrowForwardIcon style={{ color: "pink" }} fontSize="large" />
+        <ArrowForwardIcon style={{ color: "white" }} fontSize="large" />
       </div>
 
       <div className="">
