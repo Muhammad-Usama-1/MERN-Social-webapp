@@ -21,6 +21,13 @@
   padding: 5px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 780px) {
+  .post-reaction {
+    padding: 1px;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+}
 .post-comments > span {
   margin-left: 2px;
   color: var(--primary-color);

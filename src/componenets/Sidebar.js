@@ -11,6 +11,7 @@ function Sidebar({ sidebar }) {
     if (!matchesmobile) {
       console.log("Clicked  occur on Mobile Size");
       sidebar.current.classList.toggle("show");
+      sidebar.current.classList.toggle("close");
 
       // sidebar.
     }
@@ -31,7 +32,8 @@ function Sidebar({ sidebar }) {
           <ul className="menu-links">
             <li onClick={() => handleNavigate("/")} className="nav-link">
               <Link className={loc.pathname === "/" ? "active" : null} to="/">
-                <i className="bx bx-home-alt icon"></i>
+                {/* <i className="bx bx-home-alt icon"></i> */}
+                <i className="bx bx-news icon"></i>
                 <span className="text nav-text">NewsFeed</span>
               </Link>
             </li>
@@ -40,7 +42,9 @@ function Sidebar({ sidebar }) {
                 className={loc.pathname === "/profile" ? "active" : null}
                 to="/profile"
               >
-                <i className="bx bx-home-alt icon"></i>
+                {/* <i className="bx bx-home-alt icon"></i> */}
+                {/* <i class="bx bx-user icon"></i> */}
+                <i className="bx bx-user icon"></i>
                 <span className="text nav-text">Profile</span>
               </Link>
             </li>
@@ -49,7 +53,8 @@ function Sidebar({ sidebar }) {
                 className={loc.pathname === "/friends" ? "active" : null}
                 to="/friends"
               >
-                <i className="bx bx-home-alt icon"></i>
+                {/* <i className="bx bx-home-alt icon"></i> */}
+                <i className="bx bx-user icon"></i>
                 <span className="text nav-text">Friends List</span>
               </Link>
             </li>
@@ -58,7 +63,9 @@ function Sidebar({ sidebar }) {
                 className={loc.pathname === "/friendprofile" ? "active" : null}
                 to="/friendprofile"
               >
-                <i className="bx bx-home-alt icon"></i>
+                {/* <i className="bx bx-home-alt icon"></i> */}
+                <i className="bx bx-user icon"></i>
+
                 <span className="text nav-text">Friends Profile</span>
               </Link>
             </li>
@@ -67,7 +74,9 @@ function Sidebar({ sidebar }) {
                 className={loc.pathname === "/group" ? "active" : null}
                 to="/group"
               >
-                <i className="bx bx-home-alt icon"></i>
+                {/* <i className="bx bx-home-alt icon"></i> */}
+                <i class="bx bx-group icon"></i>
+
                 <span className="text nav-text">Groups</span>
               </Link>
             </li>
@@ -76,7 +85,9 @@ function Sidebar({ sidebar }) {
                 className={loc.pathname === "/profile-image" ? "active" : null}
                 to="/profile-image"
               >
-                <i className="bx bx-home-alt icon"></i>
+                {/* <i className="bx bx-home-alt icon"></i> */}
+                <i class="bx bx-image icon"></i>
+
                 <span className="text nav-text">Profile Image</span>
               </Link>
             </li>
@@ -85,7 +96,9 @@ function Sidebar({ sidebar }) {
                 className={loc.pathname === "/profile-video" ? "active" : null}
                 to="/profile-video"
               >
-                <i className="bx bx-home-alt icon"></i>
+                {/* <i className="bx bx-home-alt icon"></i> */}
+                <i class="bx bx-video icon"></i>
+
                 <span className="text nav-text">Profile Video</span>
               </Link>
             </li>
