@@ -43,7 +43,7 @@ function Sidebar({ sidebar }) {
                 to="/profile"
               >
                 {/* <i className="bx bx-home-alt icon"></i> */}
-                {/* <i class="bx bx-user icon"></i> */}
+                {/* <i className="bx bx-user icon"></i> */}
                 <i className="bx bx-user icon"></i>
                 <span className="text nav-text">Profile</span>
               </Link>
@@ -75,7 +75,7 @@ function Sidebar({ sidebar }) {
                 to="/group"
               >
                 {/* <i className="bx bx-home-alt icon"></i> */}
-                <i class="bx bx-group icon"></i>
+                <i className="bx bx-group icon"></i>
 
                 <span className="text nav-text">Groups</span>
               </Link>
@@ -86,7 +86,7 @@ function Sidebar({ sidebar }) {
                 to="/profile-image"
               >
                 {/* <i className="bx bx-home-alt icon"></i> */}
-                <i class="bx bx-image icon"></i>
+                <i className="bx bx-image icon"></i>
 
                 <span className="text nav-text">Profile Image</span>
               </Link>
@@ -97,9 +97,19 @@ function Sidebar({ sidebar }) {
                 to="/profile-video"
               >
                 {/* <i className="bx bx-home-alt icon"></i> */}
-                <i class="bx bx-video icon"></i>
+                <i className="bx bx-video icon"></i>
 
                 <span className="text nav-text">Profile Video</span>
+              </Link>
+            </li>
+            <li onClick={() => handleNavigate("/")} className="nav-link">
+              <Link
+                className={loc.pathname === "/profile-event" ? "active" : null}
+                to="/profile-event"
+              >
+                {/* <i className="bx bx-home-alt icon"></i> */}
+                <i className="bx bx-user icon"></i>
+                <span className="text nav-text">Profile Event</span>
               </Link>
             </li>
           </ul>

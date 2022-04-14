@@ -18,6 +18,7 @@ import "./styles/layoutStyle.css";
 import GroupScreen from "./screens/GroupScreen";
 import ProfilePhotoScreen from "./screens/ProfilePhotoScreen";
 import ProfileVideoScreen from "./screens/ProfileVideoScreen";
+import ProfileEventScreen from "./screens/ProfileEventScreen";
 function App() {
   // console.log(data);
   // let visible = true;
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<FeedScreen />} />
           <Route path="profile" element={<ProfileScreen />} />
           <Route path="profile-image" element={<ProfilePhotoScreen />} />
+          <Route path="profile-event" element={<ProfileEventScreen />} />
           <Route path="profile-video" element={<ProfileVideoScreen />} />
           <Route path="friends" element={<FriendListScreen />} />
           <Route path="friendprofile" element={<FriendProfileScreen />} />
