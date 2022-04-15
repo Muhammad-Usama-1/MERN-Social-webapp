@@ -26,7 +26,6 @@
 }
 
 .event-card--title {
-  /* font-weight: 100; */
   font-weight: 200;
   font-family: "Poppins";
   font-size: 18px;
@@ -58,9 +57,9 @@
 .photo-line-round {
   z-index: 0;
   position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
   /* object-fit: contain; */
   margin-left: -15px;
   border-right: 2px solid var(--primary-color);
