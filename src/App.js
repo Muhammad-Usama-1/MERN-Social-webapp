@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppBar from "./componenets/AppBar";
+import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 
 import FreindsSidebar from "./componenets/FreindsSidebar";
 import Sidebar from "./componenets/Sidebar";
@@ -20,6 +21,7 @@ import ProfilePhotoScreen from "./screens/ProfilePhotoScreen";
 import ProfileVideoScreen from "./screens/ProfileVideoScreen";
 import ProfileEventScreen from "./screens/ProfileEventScreen";
 import ProfileBadgeScreen from "./screens/ProfileBadgeScreen";
+import NotificationScreen from "./screens/NotificationScreen";
 function App() {
   // console.log(data);
   // let visible = true;
@@ -40,6 +42,7 @@ function App() {
           <Route path="profile-image" element={<ProfilePhotoScreen />} />
           <Route path="profile-badge" element={<ProfileBadgeScreen />} />
           <Route path="profile-event" element={<ProfileEventScreen />} />
+          <Route path="notification" element={<NotificationScreen />} />
           <Route path="profile-video" element={<ProfileVideoScreen />} />
           <Route path="friends" element={<FriendListScreen />} />
           <Route path="friendprofile" element={<FriendProfileScreen />} />

@@ -61,9 +61,6 @@ i {
   color: var(--primary-color);
 }
 
-/* .MuiSvgIcon-root {
-  margin-right: 5px;
-} */
 .sidebar .menu-bar {
   height: calc(100% - 55px);
   display: flex;

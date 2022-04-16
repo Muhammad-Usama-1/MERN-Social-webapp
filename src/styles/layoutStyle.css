@@ -15,8 +15,7 @@
   display: grid !important;
   margin-top: 62px;
   grid-template-columns: 280px 1fr 280px;
-  /* background-color: #f8f9fa; */
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
   background-color: var(--primary-color-light);
   /* background-color: paleturquoise; */
 }

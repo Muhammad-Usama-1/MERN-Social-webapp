@@ -6,9 +6,13 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+}
+body {
   color: #777d74;
 }
-
+a {
+  color: #777d74;
+}
 :root {
   /* ===== Colors ===== */
   --body-color: #f8f9fa;

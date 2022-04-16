@@ -1,8 +1,11 @@
 .badge-cards {
   display: grid;
-  /* padding: 10px; */
+  padding: 10px;
   /* background-color: palevioletred; */
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  /* background-color: var(--secondry-color); */
+  background-color: var(--primary-color-light);
+
   gap: 10px;
 }
 
@@ -12,6 +15,7 @@
   padding: 10px;
   position: relative;
   background-color: var(--secondry-color);
+  box-shadow: var(--box-shadow);
 }
 .badge-card--img {
   position: absolute;
