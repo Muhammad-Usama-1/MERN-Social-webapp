@@ -22,6 +22,10 @@ import ProfileVideoScreen from "./screens/ProfileVideoScreen";
 import ProfileEventScreen from "./screens/ProfileEventScreen";
 import ProfileBadgeScreen from "./screens/ProfileBadgeScreen";
 import NotificationScreen from "./screens/NotificationScreen";
+import NotFound from "./screens/NotFound";
+import Layout from "./componenets/Layout";
+import AppRoute from "./componenets/AppRoute";
+// import AppRoute from "./componenets/APPRoute";
 function App() {
   // console.log(data);
   // let visible = true;
@@ -30,33 +34,90 @@ function App() {
 
   return (
     <BrowserRouter>
-      <AppBar sidebar={sidebar} />
-      <main className="container">
-        <div></div>
-        <div className="sidebar-fixed">
-          <Sidebar sidebar={sidebar} />
-        </div>
-        <Routes>
-          <Route path="/" element={<FeedScreen />} />
-          <Route path="profile" element={<ProfileScreen />} />
-          <Route path="profile-image" element={<ProfilePhotoScreen />} />
-          <Route path="profile-badge" element={<ProfileBadgeScreen />} />
-          <Route path="profile-event" element={<ProfileEventScreen />} />
-          <Route path="notification" element={<NotificationScreen />} />
-          <Route path="profile-video" element={<ProfileVideoScreen />} />
-          <Route path="friends" element={<FriendListScreen />} />
-          <Route path="friendprofile" element={<FriendProfileScreen />} />
-          <Route path="group" element={<GroupScreen />} />
-        </Routes>
-        <div></div>
-        <div className="friendsSidebar">
-          <FreindsSidebar fsidebar={fsidebar} />
-        </div>
-      </main>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <FeedScreen />
+            </Layout>
+          }
+        />
+        <Route
+          path="profile"
+          element={
+            <Layout>
+              <ProfileScreen />
+            </Layout>
+          }
+        />
 
-      {/* <FeedScreen /> */}
-      {/* <ProfileScreen /> */}
-      {/* <FriendListScreen /> */}
+        <Route path="*" element={<NotFound />} />
+        <Route
+          path="profile-image"
+          element={
+            <Layout>
+              <ProfilePhotoScreen />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="profile-badge"
+          element={
+            <Layout>
+              <ProfileBadgeScreen />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="profile-event"
+          element={
+            <Layout>
+              <ProfileEventScreen />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="notification"
+          element={
+            <Layout>
+              <NotificationScreen />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="profile-video"
+          element={
+            <Layout>
+              <ProfileVideoScreen />
+            </Layout>
+          }
+        />
+        <Route
+          path="friends"
+          element={
+            <Layout>
+              <FriendListScreen />
+            </Layout>
+          }
+        />
+        <Route
+          path="friendprofile"
+          element={
+            <Layout>
+              <FriendProfileScreen />
+            </Layout>
+          }
+        />
+        <Route
+          path="group"
+          element={
+            <Layout>
+              <GroupScreen />
+            </Layout>
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 }

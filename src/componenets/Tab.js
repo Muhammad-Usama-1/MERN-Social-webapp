@@ -87,6 +87,7 @@ function Tab() {
             <div className="posts">
               {data.map((post) => (
                 <Post
+                  key={post.user.title}
                   videoUrl={post.videoUrl}
                   comments={post.comments}
                   images={post.images}

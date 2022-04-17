@@ -38,16 +38,9 @@ function FreindsSidebar({ fsidebar }) {
             <div className="menu">
               <ul className="menu-links">
                 <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
-
-                <li className="nav-link">
-                  <a href="/">
-                    <i className="bx bx-home-alt icon"></i>
-                    <span className="text nav-text">Dashboard</span>
-                  </a>
-                </li>
+                <UserCard title="Mughees Khan" />
+                <UserCard title="Mudassir Ahmed" subTitle="Moderator" />
+                <UserCard title="Imran Ali" subTitle="Admin" />
               </ul>
             </div>
           </div>

@@ -17,6 +17,9 @@ function UserCard({
             <span
               style={{
                 fontWeight: "400",
+
+                // color: "#77d74",
+                color: "black",
                 fontFamily: "Poppins ,sans-serif",
                 marginRight: "5px",
               }}
@@ -27,7 +30,13 @@ function UserCard({
           </p>
         </div>
         {subTitle && (
-          <p style={{ fontWeight: 100, color: `${cta ? "blue" : "#000"}` }}>
+          <p
+            style={{
+              fontWeight: 100,
+              fontFamily: "Montserrat",
+              color: `${cta ? "blue" : "#777d74"}`,
+            }}
+          >
             {subTitle}
           </p>
         )}
