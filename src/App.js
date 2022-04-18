@@ -25,6 +25,7 @@ import NotificationScreen from "./screens/NotificationScreen";
 import NotFound from "./screens/NotFound";
 import Layout from "./componenets/Layout";
 import AppRoute from "./componenets/AppRoute";
+import LoginScreen from "./screens/LoginScreen";
 // import AppRoute from "./componenets/APPRoute";
 function App() {
   // console.log(data);
@@ -43,6 +44,7 @@ function App() {
             </Layout>
           }
         />
+        <Route path="login" element={<LoginScreen />} />
         <Route
           path="profile"
           element={
@@ -57,7 +59,7 @@ function App() {
           path="profile-image"
           element={
             <Layout>
-              <ProfilePhotoScreen />{" "}
+              <ProfilePhotoScreen />
             </Layout>
           }
         />
@@ -65,7 +67,7 @@ function App() {
           path="profile-badge"
           element={
             <Layout>
-              <ProfileBadgeScreen />{" "}
+              <ProfileBadgeScreen />
             </Layout>
           }
         />
@@ -73,7 +75,7 @@ function App() {
           path="profile-event"
           element={
             <Layout>
-              <ProfileEventScreen />{" "}
+              <ProfileEventScreen />
             </Layout>
           }
         />
@@ -81,7 +83,7 @@ function App() {
           path="notification"
           element={
             <Layout>
-              <NotificationScreen />{" "}
+              <NotificationScreen />
             </Layout>
           }
         />
