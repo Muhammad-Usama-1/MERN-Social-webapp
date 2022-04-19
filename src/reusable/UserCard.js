@@ -14,32 +14,11 @@ function UserCard({
       <div className="usercard-info">
         <div style={{ display: "flex" }}>
           <p>
-            <span
-              style={{
-                fontWeight: "400",
-
-                // color: "#77d74",
-                color: "black",
-                fontFamily: "Poppins ,sans-serif",
-                marginRight: "5px",
-              }}
-            >
-              {title}
-            </span>
+            <span className="poppins">{title}</span>
             {cta && cta}
           </p>
         </div>
-        {subTitle && (
-          <p
-            style={{
-              fontWeight: 100,
-              fontFamily: "Montserrat",
-              color: `${cta ? "blue" : "#777d74"}`,
-            }}
-          >
-            {subTitle}
-          </p>
-        )}
+        {subTitle && <p className={cta && "primary-text"}>{subTitle}</p>}
         {createdAt && (
           <div className="user-comment" style={{ display: "flex" }}>
             <span>Like </span>

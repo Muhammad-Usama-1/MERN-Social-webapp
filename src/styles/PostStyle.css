@@ -4,7 +4,6 @@
   margin-bottom: 1rem;
   border-radius: 5px;
   background-color: var(--secondry-color);
-
   display: flex;
   flex-direction: column;
 }
@@ -14,6 +13,7 @@
 .post-media > img {
   width: 100%;
 }
+
 .post-media > iframe {
   background-color: gray;
 }

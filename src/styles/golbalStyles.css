@@ -1,31 +1,44 @@
-.sb-example-1 .search {
-  width: 100%;
+/*  */
+
+.iq-search-bar {
+  padding: 0 0.938rem;
+}
+.searchbox {
+  width: 30rem;
   position: relative;
-  display: flex;
 }
-.sb-example-1 .searchTerm {
+.search-link {
+  position: absolute;
+  right: 0.938rem;
+  top: 4px;
+  font-size: 1rem;
+}
+.search-link i {
+  color: var(--primary-color);
+}
+.search-input {
   width: 100%;
-  border: 3px solid #00b4cc;
-  border-right: none;
-  padding: 5px;
-  border-radius: 5px 0 0 5px;
+  height: 2.5rem;
+  padding: 0.313rem 2.5rem 0.313rem 0.938rem;
+  border: none;
+  border: 1px solid #f1f1f1;
+  background: rgba(80, 181, 255, 0.2);
   outline: none;
-  color: #9dbfaf;
+  border-radius: 5px;
 }
-.sb-example-1 .searchTerm:focus {
-  color: #00b4cc;
+.search-input::placeholder {
+  color: #777d74;
 }
-.sb-example-1 .searchButton {
-  width: 100px;
-  height: 40px;
-  border: 1px solid #00b4cc;
-  background: #00b4cc;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
+
+.search-input:focus {
+  border: 0px solid transparent !important;
 }
+@media screen and (max-width: 780px) {
+  .searchbox {
+    width: 100%;
+  }
+}
+
 /* USER CARD STYLES */
 .usercard--container {
   /* margin-bottom: 20px; */
@@ -293,4 +306,15 @@
 .video-responsive iframe {
   width: 100%;
 }
-/* --------------------------- */
+/* ----------global classes------- */
+
+.primary-text {
+  color: var(--primary-color);
+}
+.poppins {
+  font-size: 18px;
+  margin-right: 5px;
+  line-height: 21px;
+  font-family: "Poppins ,sans-serif";
+  color: #3f414d;
+}

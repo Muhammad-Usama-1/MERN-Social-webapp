@@ -13,7 +13,7 @@ function LoginScreen() {
       <div className="container-auth">
         <div className="form-signin">
           <div className="sign-in-details">
-            <div className="aa">
+            <div className="slider-box">
               <a href="/">
                 <img
                   className="sign-in-details--img"
@@ -33,7 +33,65 @@ function LoginScreen() {
               </p>
             </div>
           </div>
-          <div className="sign-in-form"></div>
+          <div className="sign-in-form">
+            <div
+              style={{
+                marginBottom: "20px",
+                fontWeight: "bold",
+                fontSize: "40px",
+                color: "#3F414D",
+                // fontFamily: "Poppins",
+              }}
+            >
+              Sign in
+            </div>
+            <p
+              style={{
+                marginBottom: "20px",
+              }}
+            >
+              Get your Credentials from +923402306855 to get unlimited feature
+              of admin panel
+            </p>
+            <div className="input-box">
+              <label htmlFor="email">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div className="input-box">
+              <div className="forget-box">
+                <label htmlFor="email">Password</label>
+                <a href="/" className="text-primary">
+                  Forgot Password
+                </a>
+              </div>
+              <input
+                type="text"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+            <div className="cta-box">
+              <input type="checkbox" name="remember" id="remember" />
+              <label htmlFor="remember">Remember me</label>
+              <button className="signin-btn">Sign in</button>
+            </div>
+            <div className="icon-action--box">
+              <p>
+                Dont have an account ? <a href="/">sign up</a>{" "}
+              </p>
+              <div className="login-options--icons">
+                <i class="bx bxl-facebook-square"></i>
+                <i class="bx bxl-twitter"></i>
+                <i class="bx bxl-instagram"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

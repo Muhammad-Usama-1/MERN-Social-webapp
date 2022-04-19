@@ -45,14 +45,7 @@ function App() {
           }
         />
         <Route path="login" element={<LoginScreen />} />
-        <Route
-          path="profile"
-          element={
-            <Layout>
-              <ProfileScreen />
-            </Layout>
-          }
-        />
+        <Route path="profile" element={<ProfileScreen />} />
 
         <Route path="*" element={<NotFound />} />
         <Route
