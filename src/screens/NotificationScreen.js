@@ -1,10 +1,10 @@
 import React from "react";
+
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import HomeIcon from "@mui/icons-material/Home";
+
 import Layout from "../componenets/Layout";
 
-// import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 import "../styles/NotificationScreenStyle.css";
 function NotificationScreen() {
   return (

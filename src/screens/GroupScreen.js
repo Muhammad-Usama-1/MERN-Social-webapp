@@ -1,6 +1,7 @@
 import React from "react";
-import Layout from "../componenets/Layout";
+
 import GroupCard from "../reusable/GroupCard";
+import Layout from "../componenets/Layout";
 import PageHeader from "../reusable/PageHeader";
 
 import "../styles/GroupScreenStyle.css";

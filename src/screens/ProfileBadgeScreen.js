@@ -1,6 +1,7 @@
 import React from "react";
-import UserBanner from "../reusable/UserBanner";
+
 import Layout from "../componenets/Layout";
+import UserBanner from "../reusable/UserBanner";
 
 import "../styles/ProfileBadgeStyle.css";
 

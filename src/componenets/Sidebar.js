@@ -31,7 +31,10 @@ function Sidebar({ sidebar }) {
         <div className="menu">
           <ul className="menu-links">
             <li onClick={() => handleNavigate("/")} className="nav-link">
-              <Link className={loc.pathname === "/" ? "active" : null} to="/">
+              <Link
+                className={loc.pathname === "/feed" ? "active" : null}
+                to="/feed"
+              >
                 {/* <i className="bx bx-home-alt icon"></i> */}
                 <i className="bx bx-news icon"></i>
                 <span className="text nav-text">NewsFeed</span>

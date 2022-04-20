@@ -1,12 +1,14 @@
 import React from "react";
-import FriendsPhotoCard from "../reusable/FriendsPhotoCard";
-import PhotosCard from "../reusable/PhotosCard";
-import UserBanner from "../reusable/UserBanner";
-import "../styles/FriendProfileStyle.css";
+
 import data from "../assets/posts.json";
+import FriendsPhotoCard from "../reusable/FriendsPhotoCard";
+import Layout from "../componenets/Layout";
+import PhotosCard from "../reusable/PhotosCard";
 import Post from "../componenets/Post";
 import UserAbout from "../reusable/UserAbout";
-import Layout from "../componenets/Layout";
+import UserBanner from "../reusable/UserBanner";
+
+import "../styles/FriendProfileStyle.css";
 
 function FriendProfileScreen() {
   return (

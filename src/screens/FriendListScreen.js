@@ -1,7 +1,9 @@
 import React from "react";
-import Layout from "../componenets/Layout";
+
 import FriendCard from "../reusable/FriendCard";
+import Layout from "../componenets/Layout";
 import PageHeader from "../reusable/PageHeader";
+
 import "../styles/friendListStyle.css";
 function FriendListScreen() {
   return (
