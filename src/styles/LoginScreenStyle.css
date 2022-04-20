@@ -120,7 +120,9 @@
   width: 200px;
 }
 .sign-in-details--img {
-  width: 300px;
+  max-width: 300px;
+  /* width: 300px; */
+  width: 90%;
 }
 .slider-box {
   padding: 6.25rem;
@@ -152,10 +154,12 @@
   }
   .form-signin {
     padding: 0;
-    margin: 0 auto;
+    margin: 10px auto;
+    margin-bottom: 20px;
   }
   .sign-in-details {
     margin: 0 auto;
+    height: min-content;
     padding: 0;
     flex-shrink: 0;
     width: 100%;
@@ -163,7 +167,7 @@
   }
   .sign-in-form {
     /* font-size: 12px; */
-    font-size: 75.5%;
+    /* font-size: 75.5%; */
     padding: 0.5rem 1rem !important;
     background: #fff;
     padding-top: 0.75rem;
@@ -171,7 +175,7 @@
     flex: 0 0 auto;
     flex-shrink: 0;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
   .slider-box {
     text-align: center;
@@ -182,6 +186,22 @@
   }
 
   .form-signin {
+    flex-direction: column;
+  }
+  .container-auth {
+    overflow-x: hidden;
+  }
+  .sigin-page {
+    overflow-x: hidden;
+  }
+  .login-options--icons > i {
+    cursor: pointer;
+    margin: 2px !important;
+    padding: 2px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .icon-action--box {
     flex-direction: column;
   }
 }
