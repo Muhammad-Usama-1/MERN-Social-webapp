@@ -1,9 +1,11 @@
 import React from "react";
+import Layout from "../componenets/Layout";
 import PageHeader from "../reusable/PageHeader";
+
 import "../styles/ProfilePhtScreenStyle.css";
 function ProfilePhotoScreen() {
   return (
-    <>
+    <Layout>
       <div className="content-media">
         <PageHeader title="Your Photos" />
         <div className="profile-photos-container">
@@ -86,7 +88,7 @@ function ProfilePhotoScreen() {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 }
 

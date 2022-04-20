@@ -13,7 +13,7 @@
 }
 .notification-card {
   display: flex;
-  background-color: var(--secondry-color);
+  background-color: var(--dark-white-color);
   box-shadow: var(--box-shadow);
   /* justify-content: space-around; */
   align-items: center;

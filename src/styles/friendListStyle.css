@@ -28,7 +28,7 @@
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 10px !important;
-  background-color: var(--secondry-color);
+  background-color: var(--dark-white-color);
   padding-bottom: 20px;
   margin: auto;
   box-shadow: var(--box-shadow);
@@ -80,7 +80,7 @@
 .card-info-box--btn {
   padding: 11px;
   background-color: var(--primary-color);
-  color: var(--secondry-color);
+  color: var(--dark-white-color);
   border-radius: 9px;
   border: none;
 }

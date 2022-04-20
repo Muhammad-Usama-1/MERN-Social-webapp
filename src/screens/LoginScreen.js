@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/LoginScreenStyle.css";
 function LoginScreen() {
+  const navigate = useNavigate();
+  const doLogin = () => {
+    navigate("/feed");
+  };
   return (
     <section className="sigin-page">
       <div className="container-inside">
@@ -60,6 +65,7 @@ function LoginScreen() {
                 name="email"
                 id="email"
                 placeholder="Enter Email"
+                value={"user@usamaapp.com"}
               />
             </div>
             <div className="input-box">
@@ -70,16 +76,19 @@ function LoginScreen() {
                 </a>
               </div>
               <input
-                type="text"
+                type="password"
                 name="password"
                 id="password"
                 placeholder="Password"
+                value={"pass1234"}
               />
             </div>
             <div className="cta-box">
               <input type="checkbox" name="remember" id="remember" />
               <label htmlFor="remember">Remember me</label>
-              <button className="signin-btn">Sign in</button>
+              <button onClick={doLogin} className="signin-btn">
+                Sign in
+              </button>
             </div>
             <div className="icon-action--box">
               <p>

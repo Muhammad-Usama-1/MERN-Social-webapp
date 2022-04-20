@@ -24,12 +24,13 @@ a {
   --primary-color: #50b5ff;
   --primary-color-dark: #469AD9;
   --primary-color-light: #E8F7FF
-  --secondry-color: #ffffff;
+  --secondary-color: #ffffff;
+  --dark-white-color: #ffffff;
   --text-color: "#777d74"
   --text-color-light: #D2D2D2;
   --text-color-dark: #8A8C97;
   --dark-color: #000;
-  
+
   /* ====== Transition ====== */
   --tran-03: all 0.2s ease;
   --tran-03: all 0.3s ease;

@@ -188,7 +188,7 @@
 }
 /* -----------PHTOS CARD STYLING--------------------- */
 .timeline-event-photo {
-  background-color: var(--secondry-color);
+  background-color: var(--dark-white-color);
   padding: 15px;
   margin-bottom: 10px;
 }
@@ -222,7 +222,7 @@
 
 .user-about-card {
   padding: 20px;
-  background-color: var(--secondry-color);
+  background-color: var(--dark-white-color);
   margin-bottom: 10px;
   border-radius: 10px;
 }
@@ -251,7 +251,7 @@
 
 .friendlist__header--title {
   padding: 20px;
-  background-color: var(--secondry-color);
+  background-color: var(--dark-white-color);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -266,7 +266,7 @@
 @media screen and (max-width: 680px) {
   .friendlist__header--title {
     padding: 5px;
-    background-color: var(--secondry-color);
+    background-color: var(--dark-white-color);
     position: absolute;
     top: 50%;
     left: 50%;

@@ -14,7 +14,7 @@
   overflow: hidden !important;
   text-align: center;
   border-radius: 10px;
-  background-color: var(--secondry-color);
+  background-color: var(--dark-white-color);
   box-shadow: var(--box-shadow);
 }
 .groups-cards {
@@ -68,7 +68,7 @@
 .group-card-btn {
   padding: 10px;
   background-color: var(--primary-color);
-  color: var(--secondry-color);
+  color: var(--dark-white-color);
   margin-top: 50px;
   width: 80%;
   border: none;
