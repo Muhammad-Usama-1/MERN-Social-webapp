@@ -1,9 +1,8 @@
 import React from "react";
-
 import { useNavigate } from "react-router-dom";
-
 import "../styles/AuthScreensStyle.css";
-function LoginScreen() {
+
+function SignupScreen() {
   const navigate = useNavigate();
   const doLogin = () => {
     navigate("/feed");
@@ -50,16 +49,25 @@ function LoginScreen() {
                 // fontFamily: "Poppins",
               }}
             >
-              Sign in
+              Sign Up
             </div>
             <p
               style={{
                 marginBottom: "20px",
               }}
             >
-              Get your Credentials from +923402306855 to get unlimited feature
-              of admin panel
+              Get your Credentials by sign up or contact from +923402306855 to
+              get unlimited feature of admin panel
             </p>
+            <div className="input-box">
+              <label htmlFor="name">Your Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter name"
+              />
+            </div>
             <div className="input-box">
               <label htmlFor="email">Email</label>
               <input
@@ -78,6 +86,7 @@ function LoginScreen() {
                 </a>
               </div>
               <input
+                className="custom-input"
                 type="password"
                 name="password"
                 id="password"
@@ -87,14 +96,17 @@ function LoginScreen() {
             </div>
             <div className="cta-box">
               <input type="checkbox" name="remember" id="remember" />
-              <label htmlFor="remember">Remember me</label>
+              <label htmlFor="remember">
+                i accept
+                <a href="/">terms and conditions</a>
+              </label>
               <button onClick={doLogin} className="signin-btn">
-                Sign in
+                Sign Up
               </button>
             </div>
             <div className="icon-action--box">
               <p>
-                Dont have an account ? <a href="/">sign up</a>{" "}
+                Alreay have an account ? <a href="/">Login</a>
               </p>
               <div className="login-options--icons">
                 <i class="bx bxl-facebook-square"></i>
@@ -109,4 +121,4 @@ function LoginScreen() {
   );
 }
 
-export default LoginScreen;
+export default SignupScreen;

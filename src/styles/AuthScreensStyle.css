@@ -228,7 +228,8 @@
   border: 1px solid var(--dark-color);
 }
 
-input[type="text"]:focus {
+.input-box input[type="text"]:focus,
+.custom-input:focus {
   border: 1px solid var(--primary-color);
 }
 .cta-box {
@@ -245,6 +246,12 @@ input[type="text"]:focus {
   border-radius: 3px;
   /* color: var(--dark-white-color) !important; */
   color: #ffffff;
+}
+
+label a {
+  margin-left: 2px;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .cta-box > label {

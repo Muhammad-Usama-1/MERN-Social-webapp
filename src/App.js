@@ -18,12 +18,14 @@ import ProfileBadgeScreen from "./screens/ProfileBadgeScreen";
 import GroupScreen from "./screens/GroupScreen";
 import NotificationScreen from "./screens/NotificationScreen";
 import NotFound from "./screens/NotFound";
+import SignupScreen from "./screens/SignupScreen";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LoginScreen />} />
+        <Route path="/signup" element={<SignupScreen />} />
         <Route path="feed" element={<FeedScreen />} />
         <Route path="profile" element={<ProfileScreen />} />
         <Route path="profile-image" element={<ProfilePhotoScreen />} />
