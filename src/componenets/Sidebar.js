@@ -135,6 +135,16 @@ function Sidebar({ sidebar }) {
                 <span className="text nav-text">Notifications</span>
               </Link>
             </li>
+            <li onClick={() => handleNavigate("/")} className="nav-link">
+              <Link
+                className={loc.pathname === "/friend-request" ? "active" : null}
+                to="/friend-request"
+              >
+                {/* <i className="bx bx-home-alt icon"></i> */}
+                <i className="bx bx-user icon"></i>
+                <span className="text nav-text">friend Requests</span>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

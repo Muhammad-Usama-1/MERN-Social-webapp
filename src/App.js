@@ -19,6 +19,7 @@ import GroupScreen from "./screens/GroupScreen";
 import NotificationScreen from "./screens/NotificationScreen";
 import NotFound from "./screens/NotFound";
 import SignupScreen from "./screens/SignupScreen";
+import FriendRequestScreen from "./screens/FriendRequestScreen";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<LoginScreen />} />
         <Route path="/signup" element={<SignupScreen />} />
         <Route path="feed" element={<FeedScreen />} />
+        <Route path="friend-request" element={<FriendRequestScreen />} />
         <Route path="profile" element={<ProfileScreen />} />
         <Route path="profile-image" element={<ProfilePhotoScreen />} />
         <Route path="profile-badge" element={<ProfileBadgeScreen />} />

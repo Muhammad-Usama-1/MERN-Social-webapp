@@ -97,7 +97,7 @@ function SignupScreen() {
             <div className="cta-box">
               <input type="checkbox" name="remember" id="remember" />
               <label htmlFor="remember">
-                i accept
+                I accept
                 <a href="/">terms and conditions</a>
               </label>
               <button onClick={doLogin} className="signin-btn">
