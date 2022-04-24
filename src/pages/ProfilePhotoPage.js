@@ -1,7 +1,7 @@
 import React from "react";
 
-import Layout from "../componenets/Layout";
-import PageHeader from "../reusable/PageHeader";
+import Layout from "../components/Layout";
+import PageHeader from "../components/cards/PageHeaderCard";
 
 import "../styles/ProfilePhtScreenStyle.css";
 function ProfilePhotoScreen() {

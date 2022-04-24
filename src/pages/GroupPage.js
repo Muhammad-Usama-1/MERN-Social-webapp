@@ -1,8 +1,8 @@
 import React from "react";
 
-import GroupCard from "../reusable/GroupCard";
-import Layout from "../componenets/Layout";
-import PageHeader from "../reusable/PageHeader";
+import GroupCard from "../components/cards/GroupCard";
+import Layout from "../components/Layout";
+import PageHeader from "../components/cards/PageHeaderCard";
 
 import "../styles/GroupScreenStyle.css";
 function GroupScreen() {

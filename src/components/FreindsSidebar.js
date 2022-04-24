@@ -2,7 +2,7 @@ import React from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useMediaQuery } from "@mui/material";
 
-import UserCard from "../reusable/UserCard";
+import UserCard from "./cards/UserCard";
 import "../styles/FriendsSidebar.css";
 
 function FreindsSidebar({ fsidebar }) {

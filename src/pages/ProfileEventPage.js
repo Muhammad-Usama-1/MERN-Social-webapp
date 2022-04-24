@@ -1,8 +1,8 @@
 import React from "react";
 
-import EventCard from "../reusable/EventCard";
-import Layout from "../componenets/Layout";
-import PageHeader from "../reusable/PageHeader";
+import EventCard from "../components/cards/ProfileEventCard";
+import Layout from "../components/Layout";
+import PageHeader from "../components/cards/PageHeaderCard";
 
 import "../styles/profileEventStyle.css";
 

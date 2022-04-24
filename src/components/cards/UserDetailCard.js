@@ -1,6 +1,6 @@
 import React from "react";
 
-function UserBanner() {
+function UserDetailCard() {
   return (
     <div className="profile-header">
       <div className="position-realative">
@@ -63,4 +63,4 @@ function UserBanner() {
   );
 }
 
-export default UserBanner;
+export default UserDetailCard;

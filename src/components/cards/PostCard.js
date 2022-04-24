@@ -1,15 +1,15 @@
 import React from "react";
-import UserCard from "../reusable/UserCard";
+import UserCard from "./UserCard";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import ThumbUpAltOutlinedIcon from "@mui/icons-material/ThumbUpAltOutlined";
 import { Avatar, Divider, Menu, MenuItem } from "@mui/material";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import LinkIcon from "@mui/icons-material/Link";
 import TagFacesIcon from "@mui/icons-material/TagFaces";
-import EmededVideo from "./EmededVideo";
+import EmededVideo from "../EmededVideo";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 
-import "../styles/PostStyle.css";
+import "../../styles/PostStyle.css";
 function Post({ videoUrl, images, user, comments, like }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);

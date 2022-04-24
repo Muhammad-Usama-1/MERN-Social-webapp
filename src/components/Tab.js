@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import StarsIcon from "@mui/icons-material/Stars";
 
-import UserCard from "../reusable/UserCard";
+import UserCard from "./cards/UserCard";
 import "../styles/TabStyle.css";
-import Post from "./Post";
+import Post from "./cards/PostCard";
 import data from "../assets/posts.json";
-import PhotosCard from "../reusable/PhotosCard";
-import FriendCard from "../reusable/FriendCard";
-import FriendsPhotoCard from "../reusable/FriendsPhotoCard";
+import PhotosCard from "./cards/PhotosCard";
+// import FriendCard from "./FriendCard";
+import FriendsPhotoCard from "./cards/FriendsPhotoCard";
 function Tab() {
   const [toggle, setToggle] = useState(2);
   const [inToggle, setInToggle] = useState(1);

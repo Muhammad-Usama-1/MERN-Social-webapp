@@ -1,8 +1,8 @@
 import React from "react";
 
-import Layout from "../componenets/Layout";
-import Tab from "../componenets/Tab";
-import UserBanner from "../reusable/UserBanner";
+import Layout from "../components/Layout";
+import Tab from "../components/Tab";
+import UserBanner from "../components/cards/UserDetailCard";
 
 import "../styles/ProfileScreenStyle.css";
 function ProfileScreen() {

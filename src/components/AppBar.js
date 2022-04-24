@@ -11,7 +11,7 @@ import Toolbar from "@mui/material/Toolbar";
 import { useMediaQuery } from "@mui/material";
 
 import SearchAppBar from "./AppSearchBar";
-import UserCard from "../reusable/UserCard";
+import UserCard from "./cards/UserCard";
 
 export default function ButtonAppBar({ sidebar }) {
   const [open, setOpen] = React.useState(false);

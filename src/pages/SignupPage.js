@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+// import ".";
 import "../styles/AuthScreensStyle.css";
+// import "../styles/";
 
 function SignupScreen() {
   const navigate = useNavigate();

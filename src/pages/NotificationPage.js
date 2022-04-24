@@ -3,7 +3,7 @@ import React from "react";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-import Layout from "../componenets/Layout";
+import Layout from "../components/Layout";
 
 import "../styles/NotificationScreenStyle.css";
 function NotificationScreen() {

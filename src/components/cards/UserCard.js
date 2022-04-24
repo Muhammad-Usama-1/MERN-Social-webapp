@@ -1,5 +1,5 @@
 import React from "react";
-import userPhoto from "../assets/user.jpg";
+import userPhoto from "../../assets/user.jpg";
 function UserCard({
   toComment,
   createdAt,

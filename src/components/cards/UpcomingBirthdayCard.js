@@ -1,18 +1,17 @@
 import React from "react";
-import UserCard from "../reusable/UserCard";
+import UserCard from "./UserCard";
 
-function Story() {
+function UpcomingBirthday() {
   return (
-    <div className="story-card">
-      <h3>Stories</h3>
+    <div className="birthday-card">
+      <h3>upcoming birthdays</h3>
       <hr />
       <UserCard title="Create your Story" subTitle="time to story" />
       <UserCard />
       <UserCard />
       <UserCard />
-      <button className="app-btn"> see All </button>
     </div>
   );
 }
 
-export default Story;
+export default UpcomingBirthday;

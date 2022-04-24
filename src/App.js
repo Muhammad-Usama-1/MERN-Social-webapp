@@ -5,39 +5,40 @@ import "./styles/golbalStyles.css";
 import "./styles/FeedStyle.css";
 import "./styles/layoutStyle.css";
 
-// --------------Screens -------------------
-import FeedScreen from "./screens/FeedScreen";
-import FriendListScreen from "./screens/FriendListScreen";
-import FriendProfileScreen from "./screens/FriendProfileScreen";
-import LoginScreen from "./screens/LoginScreen";
-import ProfileScreen from "./screens/ProfileScreen";
-import ProfileVideoScreen from "./screens/ProfileVideoScreen";
-import ProfilePhotoScreen from "./screens/ProfilePhotoScreen";
-import ProfileEventScreen from "./screens/ProfileEventScreen";
-import ProfileBadgeScreen from "./screens/ProfileBadgeScreen";
-import GroupScreen from "./screens/GroupScreen";
-import NotificationScreen from "./screens/NotificationScreen";
-import NotFound from "./screens/NotFound";
-import SignupScreen from "./screens/SignupScreen";
-import FriendRequestScreen from "./screens/FriendRequestScreen";
+// --------------Pages -------------------
+import FeedPage from "./pages/FeedPage";
+import FriendListPage from "./pages/FriendListPage";
+import FriendProfilePage from "./pages/FriendProfilePage";
+import LoginPage from "./pages/LoginPage";
+import ProfilePage from "./pages/ProfilePage";
+import ProfileVideoPage from "./pages/ProfileVideoPage";
+import ProfilePhotoPage from "./pages/ProfilePhotoPage";
+import ProfileEventPage from "./pages/ProfileEventPage";
+import ProfileBadgePage from "./pages/ProfileBadgePage";
+// import ProfileBadgePage from "./pages/";
+import GroupPage from "./pages/GroupPage";
+import NotificationPage from "./pages/NotificationPage";
+import NotFound from "./pages/NotFoundPage";
+import SignupPage from "./pages/SignupPage";
+import FriendRequestPage from "./pages/FriendRequestPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LoginScreen />} />
-        <Route path="/signup" element={<SignupScreen />} />
-        <Route path="feed" element={<FeedScreen />} />
-        <Route path="friend-request" element={<FriendRequestScreen />} />
-        <Route path="profile" element={<ProfileScreen />} />
-        <Route path="profile-image" element={<ProfilePhotoScreen />} />
-        <Route path="profile-badge" element={<ProfileBadgeScreen />} />
-        <Route path="profile-event" element={<ProfileEventScreen />} />
-        <Route path="notification" element={<NotificationScreen />} />
-        <Route path="profile-video" element={<ProfileVideoScreen />} />
-        <Route path="friends" element={<FriendListScreen />} />
-        <Route path="friendprofile" element={<FriendProfileScreen />} />
-        <Route path="group" element={<GroupScreen />} />
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="feed" element={<FeedPage />} />
+        <Route path="friend-request" element={<FriendRequestPage />} />
+        <Route path="profile" element={<ProfilePage />} />
+        <Route path="profile-image" element={<ProfilePhotoPage />} />
+        <Route path="profile-badge" element={<ProfileBadgePage />} />
+        <Route path="profile-event" element={<ProfileEventPage />} />
+        <Route path="notification" element={<NotificationPage />} />
+        <Route path="profile-video" element={<ProfileVideoPage />} />
+        <Route path="friends" element={<FriendListPage />} />
+        <Route path="friendprofile" element={<FriendProfilePage />} />
+        <Route path="group" element={<GroupPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -1,7 +1,8 @@
 import React from "react";
-import Story from "./Story";
-import Event from "./Event";
-import UpcomingBirthday from "./UpcomingBirthday";
+import Story from "./cards/StoryCard";
+// import Event from "./c /EventCard";
+import Event from "./cards/EventCard";
+import UpcomingBirthday from "./cards/UpcomingBirthdayCard";
 function VerticalContent() {
   return (
     <div className="vertical-flex">

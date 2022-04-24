@@ -1,7 +1,8 @@
 import React from "react";
 
-import Layout from "../componenets/Layout";
-import PageHeader from "../reusable/PageHeader";
+import Layout from "../components/Layout";
+// import PageHeader from "..//PageHeader";
+import PageHeader from "../components/cards/PageHeaderCard";
 
 function ProfileVideoScreen() {
   return (

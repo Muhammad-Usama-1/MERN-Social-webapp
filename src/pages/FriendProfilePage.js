@@ -1,12 +1,12 @@
 import React from "react";
 
 import data from "../assets/posts.json";
-import FriendsPhotoCard from "../reusable/FriendsPhotoCard";
-import Layout from "../componenets/Layout";
-import PhotosCard from "../reusable/PhotosCard";
-import Post from "../componenets/Post";
-import UserAbout from "../reusable/UserAbout";
-import UserBanner from "../reusable/UserBanner";
+import FriendsPhotoCard from "../components/cards/FriendsPhotoCard";
+import Layout from "../components/Layout";
+import PhotosCard from "../components/cards/PhotosCard";
+import Post from "../components/cards/PostCard";
+import UserAbout from "../components/cards/UserAboutCard";
+import UserBanner from "../components/cards/UserDetailCard";
 
 import "../styles/FriendProfileStyle.css";
 

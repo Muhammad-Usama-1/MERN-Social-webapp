@@ -1,8 +1,8 @@
 import React from "react";
 
-import FriendCard from "../reusable/FriendCard";
-import Layout from "../componenets/Layout";
-import PageHeader from "../reusable/PageHeader";
+import FriendCard from "../components/cards/FriendCard";
+import Layout from "../components/Layout";
+import PageHeader from "../components/cards/PageHeaderCard";
 
 import "../styles/friendListStyle.css";
 function FriendListScreen() {

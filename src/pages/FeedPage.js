@@ -2,9 +2,9 @@ import React from "react";
 import { useMediaQuery } from "@mui/material";
 
 import data from "../assets/posts.json";
-import Post from "../componenets/Post";
-import Layout from "../componenets/Layout";
-import VerticalContent from "../componenets/VerticalContent";
+import Post from "../components/cards/PostCard";
+import Layout from "../components/Layout";
+import VerticalContent from "../components/VerticalContent";
 
 function FeedScreen() {
   const matches990 = useMediaQuery("(min-width:990px)");

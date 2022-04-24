@@ -1,5 +1,5 @@
 import React from "react";
-import UserCard from "../reusable/UserCard";
+import UserCard from "./UserCard";
 
 function Event() {
   return (

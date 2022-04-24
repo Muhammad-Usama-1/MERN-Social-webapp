@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../componenets/Layout";
-import UserCard from "../reusable/UserCard";
+import Layout from "../components/Layout";
+import UserCard from "../components/cards/UserCard";
 import "../styles/FriendRequestStyle.css";
 
 function FriendRequestScreen() {
