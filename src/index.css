@@ -38,6 +38,7 @@ a {
   --tran-05: all 0.3s ease;
 
   --box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
+  --border-line: 1px solid #d7ddd4;
 }
 
 body {
