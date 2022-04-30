@@ -21,6 +21,7 @@ import NotificationPage from "./pages/NotificationPage";
 import NotFound from "./pages/NotFoundPage";
 import SignupPage from "./pages/SignupPage";
 import FriendRequestPage from "./pages/FriendRequestPage";
+import ProfileEditPage from "./pages/ProfileEditPage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="feed" element={<FeedPage />} />
         <Route path="friend-request" element={<FriendRequestPage />} />
         <Route path="profile" element={<ProfilePage />} />
+        <Route path="profile-edit" element={<ProfileEditPage />} />
         <Route path="profile-image" element={<ProfilePhotoPage />} />
         <Route path="profile-badge" element={<ProfileBadgePage />} />
         <Route path="profile-event" element={<ProfileEventPage />} />
