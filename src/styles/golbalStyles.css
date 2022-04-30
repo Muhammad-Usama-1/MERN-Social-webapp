@@ -365,3 +365,7 @@
   margin-right: 0.5rem;
   border-radius: 0.2rem;
 }
+.red-btn {
+  background-color: rgb(255, 196, 196) !important;
+  color: red !important;
+}
